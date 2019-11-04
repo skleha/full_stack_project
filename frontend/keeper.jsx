@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import configureStore from './store/store'
-import { signup, login, logout } from "./actions/session_actions";
+import configureStore from './store/store';
+import Root from './components/Root';
+import { signup, login, logout } from './actions/session_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
@@ -15,6 +16,5 @@ document.addEventListener("DOMContentLoaded", () => {
   window.logout = logout;
   // Testing ends
 
-  ReactDOM.render(<h1>You've got the root</h1>, root);
+  ReactDOM.render(<Root store={store}/>, root);
 });
-
