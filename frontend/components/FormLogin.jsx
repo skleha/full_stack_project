@@ -24,49 +24,63 @@ class FormLogin extends React.Component {
     this.props.processForm(user);
   }
 
+
   render() {
 
     const errorList = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>)
 
     return (
-      <div className="login-form">
+      <div className="login-main">
+        <div className="login-clearfix"></div>
 
-        <div className="login-form-errors">
-          <ul>
-            {errorList}
-          </ul>
-        </div> <br></br>
+        <div className="login-form">
 
-        <h2>Login</h2><br></br>
+          <h2 className="login-form-brand">
+            <span className="login-G">G</span>
+            <span className="login-o1">o</span>
+            <span className="login-o2">o</span>
+            <span className="login-g">g</span>
+            <span className="login-l">l</span>
+            <span className="login-e">e</span>
+          </h2>
 
-        <form>
+          <h2 className="login-form-title">Log In</h2>
+          <h2 className="login-form-subtitle">Use your Google Account</h2>
 
-          <div className="login-form-input">
-            <label>Username:
-              <input
-                type="text"
-                value={this.state.username}
-                onChange={this.handleInput('username')}
-              />
-            </label>
-          </div><br></br>
+          <div>
+            <ul className="login-error-ul">
+              {errorList}
+            </ul>
+          </div>
 
-          <div className="login-form-input">
-            <label>Password:
-              <input
-                type="text"
-                value={this.state.password}
-                onChange={this.handleInput('password')}
-              />
-            </label>
-          </div><br></br>
+          <form>
 
-          <button onClick={this.handleSubmit}>Login</button><br></br>
+              <label className="login-form-username">
+                <input
+                  type="text"
+                  value={this.state.username}
+                  onChange={this.handleInput('username')}
+                  placeholder="Username"
+                />
+              </label>
 
-        </form>
+              <label className="login-form-password">
+                <input
+                  type="text"
+                  value={this.state.password}
+                  onChange={this.handleInput('password')}
+                  placeholder="Password"
+                />
+              </label>
 
-        <Link className="signup-form-link" to={"/signup"}>Do you need to sign up?</Link>
+          </form>
 
+          <div className="login-link-and-button">
+            <Link className="signup-form-link" to={"/signup"}>Sign Up for Account</Link>
+            <button className="login-form-button" onClick={this.handleSubmit}>Login</button>
+          </div>
+
+        </div>
       </div>
 
     );

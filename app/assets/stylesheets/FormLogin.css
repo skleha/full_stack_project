@@ -1,0 +1,106 @@
+
+.login-main {
+  height: 400px;
+}
+
+.login-form {
+  background-color: white;
+  margin: auto;
+  width: 25%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 50px;
+}
+
+.login-clearfix {
+  height: 70px;
+}
+
+.login-form-brand {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.login-form-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.login-form-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.login-error-div {
+ 
+}
+
+.login-error-ul {
+  list-style: none;
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+.login-input {
+  margin-bottom: 100px;
+}
+
+.login-link-and-button {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-form-link {
+  text-decoration: none;
+}
+
+.login-form-button {
+  background-color:#0080ff;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: white;
+  border-radius: 5px;
+}
+
+.login-G {
+  color: blue;
+}
+
+.login-o1 {
+  color: red;
+}
+
+.login-o2 {
+  color: yellow;
+}
+
+.login-g {
+  color: blue;
+}
+
+.login-l {
+  color: green;
+}
+
+.login-e {
+  color: red;
+}

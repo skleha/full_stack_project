@@ -30,54 +30,66 @@ class FormSignup extends React.Component {
     const errorList = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>)
 
     return (
-      <div className="signup-form">
+      <div className="signup-main">
+        <div className="signup-clearfix"></div>
 
-        <div className="signup-form-errors">
-          <ul>
-            {errorList}
-          </ul>
-        </div> <br></br>
+        <div className="signup-form">
 
-        <h2>Sign Up</h2><br></br>
+          <h2 className="signup-form-brand">
+            <span className="signup-G">G</span>
+            <span className="signup-o1">o</span>
+            <span className="signup-o2">o</span>
+            <span className="signup-g">g</span>
+            <span className="signup-l">l</span>
+            <span className="signup-e">e</span>
+          </h2>
 
-        <form>
+          <h2 className="signup-form-title">Sign Up</h2>
+          <h2 className="signup-form-subtitle">Use your Google Account</h2>
 
-          <div className="signup-form-input">
-            <label>Username:
-              <input
-                type="text"
-                value={this.state.username}
-                onChange={this.handleInput('username')}
-              />
-            </label>
-          </div><br></br>
+          <div>
+            <ul className="signup-error-ul">
+              {errorList}
+            </ul>
+          </div>
 
-          <div className="signup-form-input">
-            <label>Password:
-              <input
-                type="text"
-                value={this.state.password}
-                onChange={this.handleInput('password')}
-              />
-            </label>
-          </div><br></br>
+          <form>
 
-          <div className="signup-form-input">
-            <label>Email:
-              <input
-                type="text"
-                value={this.state.email}
-                onChange={this.handleInput('email')}
-              />
-            </label>
-          </div><br></br>
+              <label className="signup-input">
+                <input
+                  type="text"
+                  value={this.state.username}
+                  onChange={this.handleInput('username')}
+                  placeholder="Username"
+                />
+              </label>
+        
+              <label className="signup-input">
+                <input
+                  type="text"
+                  value={this.state.password}
+                  onChange={this.handleInput('password')}
+                  placeholder="Password"
+                />
+              </label>
 
-          <button onClick={this.handleSubmit}>Sign Up</button><br></br>
+              <label className="signup-input">
+                <input
+                  type="text"
+                  value={this.state.email}
+                  onChange={this.handleInput('email')}
+                  placeholder="Email"
+                />
+              </label>
 
-        </form>
+          </form>
 
-        <Link className="login-form-link" to={"/login"}>Do you need to login?</Link>
+          <div className="signup-link-and-button">
+            <Link className="login-form-link" to={"/login"}>Login to Account</Link>
+            <button className="signup-form-button" onClick={this.handleSubmit}>Sign Up</button>
+          </div>
 
+        </div>
       </div>
 
     );

@@ -1,0 +1,58 @@
+
+.greeting-main {
+}
+
+.greeting-pitch {
+  background-image: url("/greeting-post-it-note.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 825px;
+  position: relative;
+}
+
+.greeting-brand-product {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.greeting-brand {
+  font-size: 45px;
+  color:white;
+  font-weight: 100;
+  margin-right: 5px;
+}
+.greeting-product-name {
+  font-size: 45px;
+  color: white;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: lightgray;
+}
+
+.greeting-tagline {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 450px;
+  left: 770px;
+}
+
+.greeting-button-container {
+  position: absolute;
+  top: 580px;
+  left: 830px;
+}
+
+.greeting-btn {
+  font-family: 'Open Sans', sans-serif;
+  background-color:#0080ff;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}

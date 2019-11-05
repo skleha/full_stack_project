@@ -9,9 +9,25 @@ const Greeting = ({ currentUser, logout }) => {
       <button onClick={logout}>Logout</button>
     </div>
   ) : (
-      <div className="greeting-link-container">
-        <Link className="greeting-btn" to="/signup">Sign Up</Link>
-        <Link className="greeting-btn" to="/login">Log In</Link>
+      <div className="greeting-main">
+        
+        <div className="greeting-pitch">
+        
+          <div className="greeting-brand-product">
+            <span className="greeting-brand">Google</span>
+            <span className="greeting-product-name">Keep</span>
+          </div>
+
+          <div className="greeting-tagline">
+            <h2>Save your thoughts, <br></br>wherever you are</h2>
+          </div>
+
+          <div className="greeting-button-container">
+            <Link className="greeting-btn" to="/signup">Sign Up</Link>
+            <Link className="greeting-btn" to="/login">Log In</Link>
+          </div>
+          
+        </div>      
       </div>
     );
 

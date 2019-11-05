@@ -1,0 +1,104 @@
+
+.signup-main {
+  height: 400px;
+}
+
+.signup-form {
+  background-color: white;
+  margin: auto;
+  width: 25%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 50px;
+}
+
+.signup-clearfix {
+  height: 70px;
+}
+
+.signup-form-brand {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.signup-form-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.signup-form-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.signup-error-ul {
+  list-style: none;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+.signup-input {
+  margin-bottom: 100px;
+}
+
+.signup-link-and-button {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form-link {
+  text-decoration: none;
+}
+
+.signup-form-button {
+  background-color:#0080ff;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: white;
+  border-radius: 5px;
+}
+
+.signup-G {
+  color: blue;
+}
+
+.signup-o1 {
+  color: red;
+}
+
+.signup-o2 {
+  color: #ffff00;
+}
+
+.signup-g {
+  color: blue;
+}
+
+.signup-l {
+  color: green;
+}
+
+.signup-e {
+  color: red;
+}
