@@ -1,8 +1,16 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
-import * as NoteAPIUtil from './utils/note_api_util'
+import {
+  fetchNotes,
+  fetchNote,
+  createNote,
+  updateNote,
+  deleteNote
+} from './actions/note_actions';
+
 
 document.addEventListener("DOMContentLoaded", () => {
   
@@ -25,12 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Testing begins
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.fetchNotes = NoteAPIUtil.fetchNotes;
-  window.fetchNote = NoteAPIUtil.fetchNote;
-  window.createNote = NoteAPIUtil.createNote;
-  window.updateNote = NoteAPIUtil.updateNote;
-  window.deleteNote = NoteAPIUtil.deleteNote;
-
+  window.fetchNotes = fetchNotes;
+  window.fetchNote = fetchNote;
+  window.createNote = createNote;
+  window.updateNote = updateNote;
+  window.deleteNote = deleteNote;
   // Testing ends
 
   const root = document.getElementById("root");
@@ -45,3 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
 // window.signup = signup;
 // window.login = login;
 // window.logout = logout;
+
+// Note API Testing
+// import * as NoteAPIUtil from './utils/note_api_util'
+// window.fetchNotes = NoteAPIUtil.fetchNotes;
+// window.fetchNote = NoteAPIUtil.fetchNote;
+// window.createNote = NoteAPIUtil.createNote;
+// window.updateNote = NoteAPIUtil.updateNote;
+// window.deleteNote = NoteAPIUtil.deleteNote;
+

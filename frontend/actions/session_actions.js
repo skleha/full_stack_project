@@ -34,7 +34,7 @@ export const clearErrors = () => ({
 export const signup = user => dispatch => (
   SessionAPIUtil.signup(user)
     .then((user) => dispatch(receiveCurrentUser(user)))
-    .fail( (error) => dispatch(receiveErrors(error)))
+    .fail((error) => dispatch(receiveErrors(error)))
 );
 
 export const login = user => dispatch => (

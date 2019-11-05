@@ -41,7 +41,7 @@ class Api::NotesController < ApplicationController
     if @note.destroy
       render :show
     else
-      render json: @note.errors.full_messages, status: 422
+      render plain: "No note found to destroy."
     end
   end
 
