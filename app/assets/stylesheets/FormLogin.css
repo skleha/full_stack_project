@@ -35,15 +35,12 @@
   margin-bottom: 20px;
 }
 
-.login-error-div {
- 
-}
-
 .login-error-ul {
   list-style: none;
   color: red;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 input[type=text] {

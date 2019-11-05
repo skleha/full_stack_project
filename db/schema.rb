@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_03_205520) do
+ActiveRecord::Schema.define(version: 2019_11_05_171621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "notes", force: :cascade do |t|
+    t.string "title"
+    t.string "body"
+    t.integer "author_id", null: false
+    t.boolean "pinned", default: false
+    t.string "color"
+    t.string "img_url"
+    t.datetime "reminder"
+    t.boolean "archived", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_notes_on_author_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username", null: false
