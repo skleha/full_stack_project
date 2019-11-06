@@ -3,7 +3,8 @@
   width: 500px;
   padding: 5px;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
+  box-shadow: 2px 3px 5px 1px #5E5E5E;
 }
 
 .note-form-title:focus {
@@ -44,14 +45,12 @@
 
 .note-form-actions {
   font-family: 'Open Sans', sans-serif; 
-  font-size: 16px;
+  font-size: 14px;
 }
-
-
 
 .note-form-button {
   font-family: 'Open Sans', sans-serif; 
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
   border: none;
 }

@@ -3,6 +3,16 @@ import React from 'react';
 
 class NoteIndexItem extends React.Component {
 
+  constructor(props) {
+    super(props)
+  }
+
+
+  renderForm() {
+    return (
+      <h1>does this work? </h1>
+    )
+  }
 
   render() {
     
