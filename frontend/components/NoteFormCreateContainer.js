@@ -3,7 +3,7 @@ import NoteForm from './NoteForm';
 import { createNote, updateNote, deleteNote } from '../actions/note_actions';
 
 const mapStateToProps = state => ({
-  post: { title: "",
+  note: { title: "",
           body: "",
           author_id: state.session.id,
           pinned: false,

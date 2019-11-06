@@ -3,13 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
-import {
-  fetchNotes,
-  fetchNote,
-  createNote,
-  updateNote,
-  deleteNote
-} from './actions/note_actions';
+import autosize from 'autosize';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,15 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Testing begins
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.fetchNotes = fetchNotes;
-  window.fetchNote = fetchNote;
-  window.createNote = createNote;
-  window.updateNote = updateNote;
-  window.deleteNote = deleteNote;
   // Testing ends
 
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store}/>, root);
+
+  // using autosize library to make text area auto-resizing
+  const textArea = document.querySelector('.note-form-body');
+  autosize(textArea);
+
 });
 
 
@@ -61,3 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // window.updateNote = NoteAPIUtil.updateNote;
 // window.deleteNote = NoteAPIUtil.deleteNote;
 
+// Actions API Testing
+// import { fetchNotes, fetchNote, createNote, updateNote, deleteNote } from './actions/note_actions';
+// window.fetchNotes = fetchNotes;
+// window.fetchNote = fetchNote;
+// window.createNote = createNote;
+// window.updateNote = updateNote;
+// window.deleteNote = deleteNote;

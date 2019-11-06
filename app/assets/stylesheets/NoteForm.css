@@ -1,0 +1,53 @@
+
+.note-form {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.note-form-title:focus {
+  outline: none;
+}
+
+.note-form-title {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  font-size: 18px;
+}
+
+.note-form-body:focus {
+  outline: none;
+}
+
+.note-form-body {
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  resize: none;
+  line-height: 25px;
+}
+
+.note-form-bottom-tray {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-form-button {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.note-form-button:focus {
+  outline: none;
+}
