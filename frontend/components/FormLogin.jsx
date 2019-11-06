@@ -61,6 +61,7 @@ class FormLogin extends React.Component {
 
               <label className="login-form-username">
                 <input
+                  className="login-form-input"
                   type="text"
                   value={this.state.username}
                   onChange={this.handleInput('username')}
@@ -70,6 +71,7 @@ class FormLogin extends React.Component {
 
               <label className="login-form-password">
                 <input
+                  className="login-form-input"
                   type="text"
                   value={this.state.password}
                   onChange={this.handleInput('password')}

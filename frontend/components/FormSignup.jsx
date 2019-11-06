@@ -61,6 +61,7 @@ class FormSignup extends React.Component {
 
               <label className="signup-input">
                 <input
+                  className="signup-form-input"
                   type="text"
                   value={this.state.username}
                   onChange={this.handleInput('username')}
@@ -70,6 +71,7 @@ class FormSignup extends React.Component {
         
               <label className="signup-input">
                 <input
+                  className="signup-form-input"
                   type="text"
                   value={this.state.password}
                   onChange={this.handleInput('password')}

@@ -4,15 +4,17 @@ import { Route } from 'react-router-dom';
 import { AuthRoute } from "../utils/route_util";
 import FormSignupContainer from './FormSignupContainer';
 import FormLoginContainer from './FormLoginContainer';
-import NoteIndexContainer from './NoteIndexContainer';
+// import NoteIndexContainer from './NoteIndexContainer';
+import NoteFormCreateContainer from "./NoteFormCreateContainer";
+
 
 
 const App = () => (
   <div>
-    <Route exact path="/" component={GreetingContainer} />
     <AuthRoute path="/login" component={FormLoginContainer} />
     <AuthRoute path="/signup" component={FormSignupContainer} />
-    <Route exact path="/notes" component={NoteIndexContainer} />
+    <Route exact path="/notes" component={NoteFormCreateContainer} />
+    <Route exact path="/" component={GreetingContainer} />
   </div>
 );
 
