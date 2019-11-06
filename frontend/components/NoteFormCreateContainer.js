@@ -10,8 +10,10 @@ const mapStateToProps = state => ({
           color: "",
           img_url: "",
           reminder: "",
-          archived: false
-        }
+          archived: false,
+          open: false
+        },
+  userId: state.session.id
 });
 
 const mapDispatchToProps = dispatch => ({

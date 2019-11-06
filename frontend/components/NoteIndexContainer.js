@@ -1,7 +1,7 @@
 
 import { connect } from 'react-redux';
 import NoteIndex from './NoteIndex';
-import { updateNote, deleteNote } from '../actions/note_actions';
+import { fetchNotes, updateNote, deleteNote } from '../actions/note_actions';
 
 const mapStateToProps = state => ({
   notes: Object.values(state.entities.notes)

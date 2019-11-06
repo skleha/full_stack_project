@@ -11,7 +11,7 @@ class NoteIndex extends React.Component {
 
   render() {
    
-    const { notes, updatePost, deletePost } = this.props;
+    const { notes, updateNote, deleteNote } = this.props;
     
     return (
       <div className="note-index">
