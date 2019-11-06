@@ -1,0 +1,12 @@
+
+.note-index {
+  padding: 20px;
+  width: 70%;
+  border: 1px solid lightgray
+}
+
+.note-index-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+

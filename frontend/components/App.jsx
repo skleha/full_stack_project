@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import { AuthRoute } from "../utils/route_util";
 import FormSignupContainer from './FormSignupContainer';
 import FormLoginContainer from './FormLoginContainer';
+import NoteIndexContainer from './NoteIndexContainer';
 
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Route exact path="/" component={GreetingContainer} />
     <AuthRoute path="/login" component={FormLoginContainer} />
     <AuthRoute path="/signup" component={FormSignupContainer} />
+    <Route exact path="/notes" component={NoteIndexContainer} />
   </div>
 );
 
