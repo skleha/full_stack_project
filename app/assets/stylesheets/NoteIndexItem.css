@@ -17,3 +17,15 @@
   line-height: 20px;
 }
 
+.sennacy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 200px;
+  margin-top: -100px; /* Negative half of height.*/
+  margin-left: -250px; /* Negative half of width. */
+  width: 300px;
+  background-color: #73AD21;
+  z-index: 2;
+}

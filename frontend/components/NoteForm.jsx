@@ -48,7 +48,6 @@ class NoteForm extends React.Component {
             />
         ) : null }
 
-
           <textarea 
             className="note-form-body"
             placeholder="Take a note..."

@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import NoteIndexItem from './NoteIndexItem';
 
 class NoteIndex extends React.Component {
@@ -11,18 +10,16 @@ class NoteIndex extends React.Component {
 
   render() {
    
-    const { notes, updateNote, deleteNote } = this.props;
+    const { notes } = this.props;
     
     return (
       <div className="note-index">
         <ul className="note-index-ul">
-          { notes.map(note => <NoteIndexItem key={note.id} note={note} updateNote={updateNote} deleteNote={deleteNote} />) }
+          { notes.map(note => <NoteIndexItem key={note.id} note={note}/>) }
         </ul>
       </div>
     )
   }
-
-
 }
 
 export default NoteIndex;
