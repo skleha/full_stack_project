@@ -8,6 +8,7 @@ class NoteFormUpdate extends React.Component {
     super(props);
     this.state = this.props.note
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   componentWillUnmount() {
@@ -18,7 +19,13 @@ class NoteFormUpdate extends React.Component {
     return (e) => this.setState({ [field]: e.currentTarget.value })
   }
 
+  handleDelete(e) {
+    this.props.deleteNote(this.state.id);
+    this.props.closeModal();
+  }
+
   handleSubmit(e) {
+      debugger
       this.props.updateNote(this.state);
       this.props.closeModal();
   }
@@ -48,7 +55,12 @@ class NoteFormUpdate extends React.Component {
 
         <div className="note-update-bottom-tray">
 
-          <h1 className="note-update-actions">Note Form buttons</h1>
+          <div className="note-update-actions">
+            <button
+              onClick={this.handleDelete}>
+              Delete
+            </button>
+          </div>
 
           <button
             className="note-update-button"
