@@ -37,6 +37,7 @@
   font-size: 16px;
   resize: none;
   line-height: 23px;
+  white-space: pre-wrap;
 }
 
 .note-update-bottom-tray {
