@@ -5,10 +5,12 @@ export const RECEIVE_ALL_NOTES = 'RECEIVE_ALL_NOTES';
 export const RECEIVE_NOTE = 'RECEIVE_NOTE';
 export const REMOVE_NOTE = 'REMOVE_NOTE';
 
-const receiveNotes = notes => ({
-  type: RECEIVE_ALL_NOTES,
-  notes
-});
+const receiveNotes = notes => {
+  return({
+    type: RECEIVE_ALL_NOTES,
+    notes
+  })
+};
 
 const receiveNote = note => ({
   type: RECEIVE_NOTE,
