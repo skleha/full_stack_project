@@ -2,10 +2,17 @@
 .note-item {
   padding: 10px 16px 12px;
   margin: 7px;
-  background-color: #e8eaed;
-  border: 1px solid lightgray;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
   border-radius: 5px;
   width: 238px;
+}
+
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .note-item-title {
@@ -18,3 +25,14 @@
   white-space: pre-wrap;
 }
 
+.note-item-tray {
+  margin-top: 15px;
+  color: white;
+  transition-delay: 5s;
+  transition: color 1s;
+}
+
+.note-item-tray:hover {
+  color: black;
+  transition: color 1s;
+}

@@ -9,7 +9,11 @@ const Main = () => {
     <div>
 
     <div className="header">
-      <h1>Header goes here </h1>
+      <div className="header-left">
+        <i className="fas fa-bars"></i>
+        <i className="far fa-lightbulb"></i>
+        <h1 className="header-product">Keeper</h1>
+      </div>   
     </div>
 
     <div className="main">

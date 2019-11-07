@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
 import autosize from 'autosize';
+import { fetchNotes } from './actions/note_actions';
 
 
 document.addEventListener("DOMContentLoaded", () => {

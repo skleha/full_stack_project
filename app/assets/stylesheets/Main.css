@@ -1,13 +1,40 @@
 
-
 .header {
-  height: 50px;
-  background-color: lightgray;
+  height: 75px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.fa-bars {
+  color: #676c73;
+}
+
+.fa-lightbulb {
+  color: white;
+  background-color: #fabc02;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.header-product {
+  font-size: 22px;
+  color: #676c73;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: lightgray;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
 .main {
   display: flex;
-
 }
 
 .sidebar {
@@ -24,7 +51,8 @@
 }
 
 .main-note-form {
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 .main-note-index {
