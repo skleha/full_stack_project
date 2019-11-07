@@ -25,7 +25,6 @@ class NoteFormUpdate extends React.Component {
   }
 
   handleSubmit(e) {
-      debugger
       this.props.updateNote(this.state);
       this.props.closeModal();
   }

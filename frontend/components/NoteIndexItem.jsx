@@ -14,16 +14,6 @@ class NoteIndexItem extends React.Component {
     this.props.openModal('editNoteForm');
   }
 
-  toggleTray(e) {
-    debugger
-    if (this.state.showTray === "") {
-      this.setState({ showTray: "showIt" });
-    } else {
-      this.setState({ showTray: "" });
-    }
-    debugger
-  }
-
   render() {
   
     const { note } = this.props;
