@@ -1,7 +1,8 @@
+
 import React from 'react';
 
 
-class NoteForm extends React.Component {
+class NoteFormCreate extends React.Component {
 
   constructor(props)  {
     super(props);
@@ -10,10 +11,6 @@ class NoteForm extends React.Component {
     this.togglePanel = this.togglePanel.bind(this);
     }
   
-  resetForm() {
-    this.setState(this.props.note);
-  }
-
   handleInput(field) {
     return (e) => this.setState({ [field]: e.currentTarget.value })
   }
@@ -34,13 +31,13 @@ class NoteForm extends React.Component {
   render() {
 
     return (
-      <div className="note-form">
+      <div className="note-create">
         
-        <div className="note-form-inputs">
+        <div className="note-create-inputs">
         
         {this.state.open ? (
           <input
-            className="note-form-title"
+            className="note-create-title"
             type="text"
             placeholder="Title"
             onChange={this.handleInput("title")}
@@ -49,7 +46,7 @@ class NoteForm extends React.Component {
         ) : null }
 
           <textarea 
-            className="note-form-body"
+            className="note-create-body"
             placeholder="Take a note..."
             onClick={this.togglePanel}
             onChange={this.handleInput("body")}
@@ -59,12 +56,12 @@ class NoteForm extends React.Component {
 
       {this.state.open ? (
 
-        <div className="note-form-bottom-tray">
+        <div className="note-create-bottom-tray">
           
-          <h1 className="note-form-actions">Note Form buttons</h1>
+          <h1 className="note-create-actions">note form buttons</h1>
           
           <button
-          className="note-form-button"
+          className="note-create-button"
           onClick={this.handleSubmit}>
             Close
           </button>
@@ -78,4 +75,4 @@ class NoteForm extends React.Component {
   }
 }
 
-export default NoteForm;
+export default NoteFormCreate;

@@ -32,33 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store}/>, root);
 
-  // using autosize library to make text area auto-resizing
-  const textArea = document.querySelector('.note-form-body');
-  autosize(textArea);
-
+  // using autosize library to make text area in note forms auto-resizing
+  const textArea1 = document.querySelector('.note-create-body');
+  const textArea2 = document.querySelector('.note-update-body');
+  autosize(textArea1);
+  autosize(textArea2);
 });
-
-
-
-
-// Session testing
-// import { signup, login, logout } from './actions/session_actions';
-// window.signup = signup;
-// window.login = login;
-// window.logout = logout;
-
-// Note API Testing
-// import * as NoteAPIUtil from './utils/note_api_util'
-// window.fetchNotes = NoteAPIUtil.fetchNotes;
-// window.fetchNote = NoteAPIUtil.fetchNote;
-// window.createNote = NoteAPIUtil.createNote;
-// window.updateNote = NoteAPIUtil.updateNote;
-// window.deleteNote = NoteAPIUtil.deleteNote;
-
-// Actions API Testing
-// import { fetchNotes, fetchNote, createNote, updateNote, deleteNote } from './actions/note_actions';
-// window.fetchNotes = fetchNotes;
-// window.fetchNote = fetchNote;
-// window.createNote = createNote;
-// window.updateNote = updateNote;
-// window.deleteNote = deleteNote;

@@ -10,12 +10,17 @@ class NoteIndex extends React.Component {
 
   render() {
    
-    const { notes } = this.props;
+    const { notes, openModal, receiveCurrentNoteId } = this.props;
     
     return (
       <div className="note-index">
         <ul className="note-index-ul">
-          { notes.map(note => <NoteIndexItem key={note.id} note={note}/>) }
+          {notes.map(note => 
+            <NoteIndexItem 
+              key={note.id}
+              note={note}
+              receiveCurrentNoteId={receiveCurrentNoteId}
+              openModal={openModal} />) }
         </ul>
       </div>
     )

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import NoteForm from './NoteForm';
-import { createNote, updateNote, deleteNote } from '../actions/note_actions';
+import NoteFormCreate from './NoteFormCreate';
+import { createNote } from '../actions/note_actions';
 
 const mapStateToProps = state => ({
   note: { title: "",
@@ -20,4 +20,4 @@ const mapDispatchToProps = dispatch => ({
   createNote: note => dispatch(createNote(note)),
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(NoteForm);
+export default connect(mapStateToProps, mapDispatchToProps)(NoteFormCreate);

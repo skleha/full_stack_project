@@ -1,0 +1,63 @@
+
+.note-update {
+  width: 500px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid lightgray;
+  -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
+  box-shadow: 2px 3px 5px 1px #5E5E5E;
+  border-radius: 10px;
+}
+
+.note-update-title:focus {
+  outline: none;
+}
+
+.note-update-title {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 22px;
+  border: none;
+  font-size: 18px;
+  
+}
+
+.note-update-body:focus {
+  outline: none;
+}
+
+.note-update-body {
+  width: 100%;
+  height: 100px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  resize: none;
+  line-height: 23px;
+}
+
+.note-update-bottom-tray {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-update-actions {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 14px;
+}
+
+.note-update-button {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+}
+
+.note-update-button:focus {
+  outline: none;
+}

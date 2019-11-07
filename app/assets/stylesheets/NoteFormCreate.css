@@ -1,17 +1,19 @@
 
-.note-form {
+.note-create {
   width: 500px;
   padding: 5px;
+  background-color: white;
   border: 1px solid lightgray;
   -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
   box-shadow: 2px 3px 5px 1px #5E5E5E;
+  border-radius: 10px;
 }
 
-.note-form-title:focus {
+.note-create-title:focus {
   outline: none;
 }
 
-.note-form-title {
+.note-create-title {
   width: 100%;
   padding: 10px 20px;
   margin: 8px 0;
@@ -21,11 +23,11 @@
   font-size: 18px;
 }
 
-.note-form-body:focus {
+.note-create-body:focus {
   outline: none;
 }
 
-.note-form-body {
+.note-create-body {
   width: 100%;
   height: 35px;
   padding: 5px 20px;
@@ -36,25 +38,25 @@
   line-height: 23px;
 }
 
-.note-form-bottom-tray {
+.note-create-bottom-tray {
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.note-form-actions {
+.note-create-actions {
   font-family: 'Open Sans', sans-serif; 
   font-size: 14px;
 }
 
-.note-form-button {
+.note-create-button {
   font-family: 'Open Sans', sans-serif; 
   font-size: 14px;
   background-color: transparent;
   border: none;
 }
 
-.note-form-button:focus {
+.note-create-button:focus {
   outline: none;
 }
