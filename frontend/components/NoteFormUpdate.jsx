@@ -10,8 +10,8 @@ class NoteFormUpdate extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-
+  componentWillUnmount() {
+    this.props.removeCurrentNoteId();
   }
 
   handleInput(field) {
@@ -23,7 +23,6 @@ class NoteFormUpdate extends React.Component {
       this.props.closeModal();
   }
 
-  
   render() {
 
     return (

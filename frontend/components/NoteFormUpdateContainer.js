@@ -1,6 +1,8 @@
+
 import { connect } from 'react-redux';
 import NoteFormUpdate from './NoteFormUpdate';
 import { updateNote, deleteNote } from '../actions/note_actions';
+import { removeCurrentNoteId } from '../actions/session_actions';
 import { closeModal } from '../actions/modal_actions';
 
 const mapStateToProps = state => {
@@ -12,6 +14,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   updateNote: note => dispatch(updateNote(note)),
   deleteNote: noteId => dispatch(deleteNote(noteId)),
+  removeCurrentNoteId: () => dispatch(removeCurrentNoteId()),
   closeModal: () => dispatch(closeModal())
 });
 

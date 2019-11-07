@@ -10,7 +10,6 @@ const notesReducer = (oldState = {}, action) => {
       return action.notes;
 
     case RECEIVE_NOTE:
-      debugger
       newState[action.note.id] = action.note;
       return newState;
 

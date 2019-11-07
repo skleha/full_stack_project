@@ -1,3 +1,4 @@
+
 import * as SessionAPIUtil from '../utils/session_api_util';
 
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
@@ -5,7 +6,7 @@ export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
 export const CLEAR_SESSION_ERRORS = 'CLEAR_SESSION_ERRORS';
 export const RECEIVE_CURRENT_NOTE_ID = "RECEIVE_CURRENT_NOTE_ID";
-
+export const REMOVE_CURRENT_NOTE_ID = "REMOVE_CURRENT_NOTE_ID";
 
 // regular actions
 
@@ -30,12 +31,17 @@ export const clearErrors = () => ({
 });
 
 
-// store a current note 
+// store a current note id / remove a current note id
 
 export const receiveCurrentNoteId = noteId => ({
   type: RECEIVE_CURRENT_NOTE_ID,
   noteId
 })
+
+export const removeCurrentNoteId = () => ({
+  type: REMOVE_CURRENT_NOTE_ID
+})
+
 
 
 // thunk action creators

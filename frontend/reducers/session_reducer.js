@@ -1,4 +1,8 @@
-import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER, RECEIVE_CURRENT_NOTE_ID } from '../actions/session_actions';
+
+import {  RECEIVE_CURRENT_USER,
+          LOGOUT_CURRENT_USER,
+          RECEIVE_CURRENT_NOTE_ID,
+          REMOVE_CURRENT_NOTE_ID } from '../actions/session_actions';
 
 const _nullSession = {
   id: null,
@@ -20,6 +24,10 @@ const sessionReducer = (state = _nullSession, action) => {
 
     case RECEIVE_CURRENT_NOTE_ID:
       newState["currentNoteId"] = action.noteId;
+      return newState;
+
+    case REMOVE_CURRENT_NOTE_ID:
+      newState["currentNoteId"] = null;
       return newState;
 
     default:
