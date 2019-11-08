@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
 import autosize from 'autosize';
-import { fetchLabels, fetchLabel, createLabel, updateLabel, deleteLabel } from './actions/label_actions';
+import { fetchAssignment, createAssignment, deleteAssignment } from '../frontend/utils/assignment_api_util';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,11 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Testing begins
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.fetchLabels = fetchLabels;
-  window.fetchLabel = fetchLabel;
-  window.createLabel = createLabel;
-  window.updateLabel = updateLabel;
-  window.deleteLabel = deleteLabel;
+  window.fetchAssignment = fetchAssignment;
+  window.createAssignment = createAssignment;
+  window.deleteAssignment = deleteAssignment;
   // Testing ends
 
   const root = document.getElementById("root");

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :notes
     resources :labels
+    resources :assignments, only: [:show, :create, :destroy]
   end
 
 
