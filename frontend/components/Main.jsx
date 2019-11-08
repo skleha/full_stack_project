@@ -1,6 +1,7 @@
 import React from 'react';
 import NoteFormCreateContainer from "./NoteFormCreateContainer";
 import NoteIndexContainer from './NoteIndexContainer';
+import LabelIndexContainer from './LabelIndexContainer';
 
 const Main = () => {
 
@@ -19,7 +20,7 @@ const Main = () => {
     <div className="main">
       
       <div className="sidebar">
-        <h1>labels go here</h1>
+        <LabelIndexContainer />
       </div>
 
       <div className="note-form-note-index">

@@ -1,7 +1,6 @@
 
 .header {
   height: 75px;
-  background-color: white;
   border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
@@ -39,7 +38,6 @@
 
 .sidebar {
   width: 250px;
-  background-color: lightpink;
 }
 
 .note-form-note-index {

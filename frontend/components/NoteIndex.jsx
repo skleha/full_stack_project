@@ -28,4 +28,3 @@ class NoteIndex extends React.Component {
 }
 
 export default NoteIndex;
-
