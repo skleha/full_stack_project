@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
 import autosize from 'autosize';
-import { fetchLabels, fetchLabel, createLabel, updateLabel, deleteLabel } from './utils/label_api_util';
+import { fetchLabels, fetchLabel, createLabel, updateLabel, deleteLabel } from './actions/label_actions';
 
 
 document.addEventListener("DOMContentLoaded", () => {
