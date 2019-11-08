@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_08_022636) do
+ActiveRecord::Schema.define(version: 2019_11_08_190100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "assignments", force: :cascade do |t|
+    t.integer "note_id", null: false
+    t.integer "label_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["note_id", "label_id"], name: "index_assignments_on_note_id_and_label_id", unique: true
+  end
 
   create_table "labels", force: :cascade do |t|
     t.string "name", null: false
