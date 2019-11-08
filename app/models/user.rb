@@ -8,8 +8,12 @@ class User < ApplicationRecord
   attr_reader :password
 
   has_many :notes,
-  foreign_key: :author_id,
-  class_name: :Note
+    foreign_key: :author_id,
+    class_name: :Note
+
+  has_many :labels,
+    foreign_key: :user_id,
+    class_name: :Label
 
   
   def self.find_by_credentials(username, password)

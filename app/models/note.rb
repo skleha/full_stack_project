@@ -5,6 +5,4 @@ class Note < ApplicationRecord
     foreign_key: :author_id,
     class_name: :User
 
-
-
 end
