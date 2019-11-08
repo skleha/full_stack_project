@@ -1,5 +1,8 @@
 
 .note-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px 16px 12px;
   margin: 7px;
   background-color: #fff;
@@ -8,11 +11,9 @@
   width: 238px;
 }
 
-
-.note-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.note-item:hover {
+  -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
+  box-shadow: 2px 3px 5px 1px #5E5E5E;
 }
 
 .note-item-title {
@@ -27,12 +28,18 @@
 
 .note-item-tray {
   margin-top: 15px;
+  height: 20px;
   color: white;
-  transition-delay: 5s;
-  transition: color 1s;
+  transition: color 1.25s;
 }
 
 .note-item-tray:hover {
   color: black;
+  transition-delay: 5s;
   transition: color 1s;
+}
+
+.tray-item {
+  padding-left: 5px;
+  padding-right: 5px;
 }

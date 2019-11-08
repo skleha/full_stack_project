@@ -27,8 +27,9 @@ class NoteIndexItem extends React.Component {
             <h3 className="note-item-body">{note.body}</h3>
           </div>
           
-        <div className={`note-item-tray ${this.state.showTray}`}>
-            <i className="far fa-trash-alt"></i>
+        <div className={`note-item-tray`}>
+          <i className="fas fa-tag tray-item"></i>
+          <i className="far fa-trash-alt tray-item"></i>
           </div>
 
       </li>
