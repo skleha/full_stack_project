@@ -4,8 +4,17 @@ import LabelIndexItem from './LabelIndexItem';
 
 class LabelIndex extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   componentDidMount() {
     this.props.fetchLabels();
+  }
+
+  handleClick(e) {
+    this.props.openModal('LabelIndexEditForm');
   }
 
   render () {
@@ -23,8 +32,8 @@ class LabelIndex extends React.Component {
             />)}
         </ul>
         <ul>
-          <li className="label-index-item">
-            <i class="fal fa-pencil  label-index-icon"></i>
+          <li className="label-index-item" onClick={this.handleClick}>
+            <i className="fal fa-pencil  label-index-icon"></i>
             <h3>Edit Labels</h3>
           </li>
         </ul>

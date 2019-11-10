@@ -1,6 +1,8 @@
 
 import React from 'react';
 import NoteFormUpdateContainer from './NoteFormUpdateContainer';
+import LabelIndexEditFormContainer from './LabelIndexEditFormContainer';
+
 
 const Modal = ({ modal, closeModal }) => {
   
@@ -17,6 +19,10 @@ const Modal = ({ modal, closeModal }) => {
   
     case 'editNoteForm':
       component = <NoteFormUpdateContainer />;
+      break;
+
+    case 'LabelIndexEditForm':
+      component = <LabelIndexEditFormContainer />;
       break;
   
       default:
