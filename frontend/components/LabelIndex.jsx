@@ -22,6 +22,13 @@ class LabelIndex extends React.Component {
             label={label}            
             />)}
         </ul>
+        <ul>
+          <li className="label-index-item">
+            <i class="fal fa-pencil  label-index-icon"></i>
+            <h3>Edit Labels</h3>
+          </li>
+        </ul>
+
       </div>
     )
   }

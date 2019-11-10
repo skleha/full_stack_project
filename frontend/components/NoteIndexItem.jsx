@@ -1,5 +1,6 @@
 
 import React from 'react';
+import NoteLabelsIndexContainer from './NoteLabelsIndexContainer';
 
 class NoteIndexItem extends React.Component {
 
@@ -22,15 +23,19 @@ class NoteIndexItem extends React.Component {
     
       <li key={note.id} onClick={this.handleClick} className="note-item">
           
-          <div className="note-item-title-body">
-            <h2 className="note-item-title">{note.title}</h2><br></br>
-            <h3 className="note-item-body">{note.body}</h3>
-          </div>
-          
+        <div className="note-item-title-body">
+          <h2 className="note-item-title">{note.title}</h2><br></br>
+          <h3 className="note-item-body">{note.body}</h3>
+        </div>
+
+        <div className="note-item-label-tray">
+          <NoteLabelsIndexContainer labelIds={note.label_ids}/>
+        </div>  
+
         <div className={`note-item-tray`}>
           <i className="fas fa-tag tray-item"></i>
           <i className="far fa-trash-alt tray-item"></i>
-          </div>
+        </div>
 
       </li>
     )

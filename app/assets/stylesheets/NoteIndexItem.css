@@ -26,6 +26,11 @@
   white-space: pre-wrap;
 }
 
+.note-item-label-tray {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 .note-item-tray {
   margin-top: 15px;
   height: 20px;

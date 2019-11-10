@@ -13,7 +13,7 @@ const Main = () => {
 
         <div className="header-left">
           <i className="fas fa-bars fa-lg"></i>
-          <i className="far fa-lightbulb fa-2x"></i>
+          <i className="far fa-lightbulb fa-lg"></i>
           <h1 className="header-product">Keeper</h1>
         </div>   
       

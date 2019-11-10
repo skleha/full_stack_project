@@ -1,0 +1,28 @@
+
+.note-label-index-item {
+  font-size: 11px;
+  color: #3c4043;
+  background-color: #e6e6e6;
+  padding: 6px 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+
+.note-label-icon {
+  /* position: absolute;
+  top: 7px;
+  right: 5px; */
+  margin-left: 3px;
+}
+
+.note-label-icon:hover {
+  
+}
+
+
+.fa-times {
+  color: darkgrey;
+}
+

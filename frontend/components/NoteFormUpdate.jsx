@@ -55,7 +55,7 @@ class NoteFormUpdate extends React.Component {
         <div className="note-update-bottom-tray">
 
           <div className="note-update-actions">
-            <i class="far fa-trash-alt" onClick={this.handleDelete}></i>
+            <i className="far fa-trash-alt" onClick={this.handleDelete}></i>
           </div>
 
           <button

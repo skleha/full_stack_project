@@ -1,7 +1,7 @@
 class Api::NotesController < ApplicationController
 
   def index
-    @notes = Note.where(author_id: current_user.id)
+    @notes = Note.where(author_id: current_user.id).includes(:labels)
     render :index
   end
 
@@ -53,3 +53,24 @@ class Api::NotesController < ApplicationController
   end
 
 end
+
+
+
+# Labels nested in a label object
+# @notes.each do |note|
+#   json.set! note.id do
+#     json.extract! note, :id, :title, :body, :author_id, :pinned, :color, :img_url, :reminder, :archived
+#     json.labels do
+#       note.labels.each do |label|
+#         json.extract! label, :id, :name
+#       end
+#     end
+#   end
+# end
+
+# No label information
+# @notes.each do |note|
+#   json.set! note.id do
+#     json.extract! note, :id, :title, :body, :author_id, :pinned, :color, :img_url, :reminder, :archived
+#   end
+# end
