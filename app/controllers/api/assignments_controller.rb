@@ -1,7 +1,13 @@
 class Api::AssignmentsController < ApplicationController
 
+  def index
+    const user = User.find(current_user.id)
+    @assignments = user.assignments
+    render :index
+  end
+
   def show
-    @assignment = Assignment.find(params[:id])
+    @assignment = Assignment.find(params[:id])    
     render :show
   end
 

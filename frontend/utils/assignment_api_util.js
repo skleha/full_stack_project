@@ -1,4 +1,11 @@
 
+export const fetchAssignments = () => {
+  return $.ajax({
+    url: `/api/assignments/`,
+    method: 'GET'
+  });
+};
+
 export const fetchAssignment = assignmentId => {
   return $.ajax({
     url: `/api/assignments/${assignmentId}`,
