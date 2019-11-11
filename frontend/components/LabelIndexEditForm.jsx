@@ -24,7 +24,6 @@ class LabelIndexEditForm extends React.Component {
   }
 
   handleSubmit(e) {
-    debugger;
     this.props.createLabel(this.state);
   }
 
@@ -34,10 +33,10 @@ class LabelIndexEditForm extends React.Component {
     let formIcon, formCheck;
 
     if (this.state.formToggle) {
-      formIcon = (<i className="fal fa-times label-form-left-icon" onClick={this.toggleForm}></i>);
-      formCheck = (<i className="fal fa-check label-form-right-icon" onClick={this.handleSubmit}></i>);
+      formIcon = (<i className="fal fa-times label-form-create-left-icon" onClick={this.toggleForm}></i>);
+      formCheck = (<i className="fal fa-check label-form-create-right-icon" onClick={this.handleSubmit}></i>);
     } else {
-      formIcon = (<i className="far fa-plus label-form-left-icon" onClick={this.toggleForm}></i>);
+      formIcon = (<i className="far fa-plus label-form-create-left-icon" onClick={this.toggleForm}></i>);
       formCheck = (<div></div>);
     }
 
@@ -52,7 +51,7 @@ class LabelIndexEditForm extends React.Component {
          { formIcon }
          <input
             type="text"
-            className="label-index-edit-form-text-input"
+            className="label-index-create-form-text-input"
             placeholder="Create New Label"
             onClick={this.toggleForm}
             onChange={this.handleInput("name")}
@@ -61,9 +60,17 @@ class LabelIndexEditForm extends React.Component {
         </div>  
 
         <ul className="label-index-edit-form-index">
-          {this.props.labels.map(label => <LabelIndexEditFormItem key={label.id} label={lable} />)}
+          {this.props.labels.map(label => 
+            <LabelIndexEditFormItem
+              key={label.id}
+              label={label}
+              updateLabel={this.props.updateLabel}
+              deleteLabel={this.props.deleteLabel}
+            />)}
         </ul>  
-
+        <div className="label-index-edit-form-done">
+            <h2>Done</h2>
+        </div>
       </div>
     )
   }

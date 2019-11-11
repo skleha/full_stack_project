@@ -1,7 +1,7 @@
 
 .label-index-edit-form {
-  width: 300px;
-  padding: 15px 10px;
+  width: 250px;
+  padding: 20px 13px;
   background-color: white;
   border: 1px solid lightgray;
   -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
@@ -12,17 +12,17 @@
   margin-bottom: 15px;
 }
 
-.label-form-left-icon {
+.label-form-create-left-icon {
   color: #aba9a9;
   width: 10px;
 }
 
-.label-index-edit-form-text-input {
-  margin-left: 10px;
+.label-index-create-form-text-input {
+  margin-left: 17px;
   height: 25px;
   width: 175px;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
   outline: none;
 }
 
@@ -30,11 +30,23 @@
   border-bottom: 1px solid lightgrey;
 }
 
-.label-form-right-icon {
+.label-form-create-right-icon {
   margin-left: 20px;
   color: #aba9a9;
 }
 
 .label-index-edit-form-index {
   margin-top: 20px;
+}
+
+.label-index-edit-form-done {
+  margin-top: 20px;
+  padding-top: 10px;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid lightgray;  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
