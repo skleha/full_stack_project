@@ -1,3 +1,4 @@
+
 import { connect } from 'react-redux';
 import LabelIndexEditForm from './LabelIndexEditForm';
 import { fetchLabels, createLabel, updateLabel, deleteLabel } from '../actions/label_actions';
