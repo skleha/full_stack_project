@@ -1,7 +1,7 @@
 class Api::AssignmentsController < ApplicationController
 
   def index
-    const user = User.find(current_user.id)
+    user = User.find(current_user.id)
     @assignments = user.assignments
     render :index
   end
@@ -24,7 +24,7 @@ class Api::AssignmentsController < ApplicationController
 
   def destroy
     @assignment = Assignment.find(params[:id])
-
+  
     if @assignment.destroy
       render :show
     else

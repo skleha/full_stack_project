@@ -15,7 +15,7 @@ const assignmentsReducer = (oldState = {}, action) => {
       return newState;
 
     case REMOVE_ASSIGNMENT:
-      delete newState[action.assignment.id];
+      delete newState[action.assignmentId];
       return newState;
 
     default:
