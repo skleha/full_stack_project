@@ -1,0 +1,32 @@
+
+.label-edit-form {
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  background-color: white;
+  height: 200px;
+  width: 205px;
+  border: 1px solid lightgray;
+  -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
+  box-shadow: 2px 3px 5px 1px #5E5E5E;
+  padding: 10px;
+  
+}
+
+.label-edit-form-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.label-edit-form-input {
+  height: 25px;
+  width: 175px;
+  border: none;
+  font-size: 13px;
+  outline: none;
+}
+
+.label-edit-form-input:focus {
+  border-bottom: 1px solid lightgray;
+}
