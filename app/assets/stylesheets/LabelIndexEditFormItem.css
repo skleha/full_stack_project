@@ -18,8 +18,18 @@
   outline: none;
 }
 
+.label-index-edit-form-text-input:focus {
+  border-bottom: 1px solid lightgrey;
+}
+
+
 .label-form-edit-right-icon {
   margin-left: 20px;
   color: #706f6f;
+}
+
+
+.label-index-edit-form-index {
+  margin-top: 20px;
 }
 

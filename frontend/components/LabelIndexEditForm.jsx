@@ -68,8 +68,8 @@ class LabelIndexEditForm extends React.Component {
               deleteLabel={this.props.deleteLabel}
             />)}
         </ul>  
-        <div className="label-index-edit-form-done">
-            <h2>Done</h2>
+        <div className="label-index-edit-form-done-div" >
+          <h2 className="label-index-edit-form-done" onClick={this.props.closeModal}>Done</h2>
         </div>
       </div>
     )

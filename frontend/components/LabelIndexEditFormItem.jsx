@@ -85,7 +85,7 @@ class LabelIndexEditFormItem extends React.Component {
         <input
           type="text"
           className="label-index-edit-form-text-input"
-          value={this.props.label.name}
+          value={this.state.name}
           onChange={this.handleInput("name")}
           onClick={this.editOn}
         />
