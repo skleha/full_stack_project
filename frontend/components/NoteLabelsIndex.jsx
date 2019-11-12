@@ -6,15 +6,18 @@ class NoteLabelsIndex extends React.Component {
 
   render() {
 
-    if (!this.props.labelIds) return null;
-    
+    const noteAssignments = this.props.assignments.filter(assignment => assignment.note_id === this.props.noteId);
+    const noteLabelIds = noteAssignments.map(assignment => assignment.label_id);
+    const noteLabels = this.props.labels.filter(label => noteLabelIds.includes(label.id));
+
     return (
       <ul className="note-labels-ul">
-        {this.props.labelIds.map(labelId => 
+        {noteLabels.map(label => 
           <NoteLabelsIndexItem
-            key={labelId}
-            labelId={labelId}
-            allLabels={this.props.allLabels} /> ) }
+            key={label.id}
+            label={label}
+          />
+        )}
       </ul>
     )
   }

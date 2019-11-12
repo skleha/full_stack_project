@@ -13,7 +13,7 @@ const Main = () => {
 
         <div className="header-left">
           <i className="fal fa-bars fa-lg"></i>
-          <i className="far fa-lightbulb fa-lg"></i>
+          <i className="fal fa-lightbulb fa-lg"></i>
           <h1 className="header-product">Keeper</h1>
         </div>   
       
@@ -21,10 +21,12 @@ const Main = () => {
 
       <div className="subheader">
 
-          <div className="subheader-sidebar">
-            <h1>Notes</h1>
-            <h1>Reminders</h1>
-          </div>
+          <ul className="subheader-sidebar">
+            <li className="subheader-sidebar-li">
+              <i className="far fa-lightbulb fa-lg"></i>
+              <h1 className="subheader-sidebar-all-notes">All Notes</h1>
+            </li>
+          </ul>
 
           <div className="subheader-note-form">
             <NoteFormCreateContainer />

@@ -44,7 +44,7 @@ class NoteIndexItem extends React.Component {
         </div>
 
         <div className="note-item-label-tray">
-          <NoteLabelsIndexContainer labelIds={note.label_ids} />
+          <NoteLabelsIndexContainer noteId={note.id} />
         </div>
 
         <div className={`note-item-tray`}>

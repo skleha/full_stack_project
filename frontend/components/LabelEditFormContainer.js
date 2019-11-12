@@ -1,6 +1,5 @@
 
 import { connect } from 'react-redux';
-
 import LabelEditForm from './LabelEditForm';
 import { createLabel } from '../actions/label_actions';
 import { fetchAssignments, createAssignment, deleteAssignment } from '../actions/assignment_actions';

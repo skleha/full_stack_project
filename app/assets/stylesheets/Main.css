@@ -16,7 +16,7 @@
   color: #676c73;
 }
 
-.fa-lightbulb {
+.fal.fa-lightbulb {
   color: white;
   background-color: #fabc02;
   padding: 10px 10px;
@@ -40,10 +40,26 @@
   width: 280px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-top: 10px;
   border-bottom: 1px solid lightgray;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
-  color: #202124
+  color: #202124;
+  
+}
+
+.subheader-sidebar-li {
+  display: flex;
+  align-items: center;
+}
+
+.far.fa-lightbulb {
+  margin-left: 20px;
+  margin-right: 13px;
+}
+
+.subheader-sidebar-all-notes {
+  font-size: 14px;
 }
 
 .subheader-note-form {
