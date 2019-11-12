@@ -1,7 +1,7 @@
 
 import React from 'react';
 import NoteLabelsIndexContainer from './NoteLabelsIndexContainer';
-import LabelEditFormContainer from './LabelEditForm';
+import LabelEditFormContainer from './LabelEditFormContainer';
 
 class NoteIndexItem extends React.Component {
 
@@ -14,7 +14,11 @@ class NoteIndexItem extends React.Component {
 
   toggleLabelForm(e) {
     e.stopPropagation();
-    this.setState({ labelFormShow: !this.state.labelFormShow });
+    this.setState({ labelFormShow: !this.state.labelFormShow }); 
+  }
+
+  handleInput(field) {
+    return (e) => this.setState({ [field]: e.currentTarget.value })
   }
 
   handleClick(e) {
@@ -27,7 +31,7 @@ class NoteIndexItem extends React.Component {
     const { note } = this.props;
 
     const labelForm = this.state.labelFormShow ? (  
-      <LabelEditFormContainer />
+      <LabelEditFormContainer noteId={note.id} toggleLabelForm={this.toggleLabelForm}/>
     ) : ( null );
 
     return (

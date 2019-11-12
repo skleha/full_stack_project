@@ -8,10 +8,12 @@ class User < ApplicationRecord
   attr_reader :password
 
   has_many :notes,
+    dependent: :destroy,
     foreign_key: :author_id,
     class_name: :Note
 
   has_many :labels,
+    dependent: :destroy,
     foreign_key: :user_id,
     class_name: :Label
 

@@ -7,6 +7,7 @@ class Label < ApplicationRecord
     class_name: :User
 
   has_many :assignments,
+    dependent: :destroy,
     foreign_key: :label_id,
     class_name: :Assignment
 

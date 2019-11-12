@@ -1,0 +1,18 @@
+
+.label-edit-form-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+
+.label-edit-form-item-checkbox {
+  color: darkgrey;
+}
+
+.label-edit-form-item-name {
+  margin-left: 5px;
+}
+

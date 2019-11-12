@@ -4,7 +4,8 @@ import React from 'react';
 const NoteLabelsIndexItem = props => {
 
   const labelObj = props.allLabels[props.labelId];
-
+  if (!labelObj) return null;
+   
   return (
     <li className="note-label-index-item">
       {labelObj["name"]}

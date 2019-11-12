@@ -7,8 +7,9 @@ import { fetchAssignments, createAssignment, deleteAssignment } from '../actions
 
 const mapStateToProps = state => ({
   labels: Object.values(state.entities.labels),
-  assignments: Object.values(state.entities.assignments)
-})
+  assignments: Object.values(state.entities.assignments),
+  currentUserId: state.session.id
+});
 
 const mapDispatchToProps = dispatch => ({
   createLabel: label => dispatch(createLabel(label)),

@@ -6,6 +6,7 @@ class Note < ApplicationRecord
     class_name: :User
 
   has_many :assignments,
+    dependent: :destroy,
     foreign_key: :note_id,
     class_name: :Assignment
 
