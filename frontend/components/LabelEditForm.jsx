@@ -67,7 +67,8 @@ class LabelEditForm extends React.Component {
                 key={label.id}
                 label={label}
                 noteId={this.props.noteId}
-                noteLabels={noteAssignments.map(noteAssignment => noteAssignment.label_id)}
+                noteAssignments={noteAssignments}
+                // noteLabels={noteAssignments.map(noteAssignment => noteAssignment.label_id)}
                 currentUserId={this.props.currentUserId}
                 createAssignment={this.props.createAssignment}
                 deleteAssignment={this.props.deleteAssignment}

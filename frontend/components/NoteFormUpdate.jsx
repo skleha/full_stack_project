@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import LabelEditFormContainer from './LabelEditFormContainer';
 
 class NoteFormUpdate extends React.Component {
 
@@ -9,10 +9,19 @@ class NoteFormUpdate extends React.Component {
     this.state = this.props.note
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.toggleLabelForm = this.toggleLabelForm.bind(this);
   }
 
   componentWillUnmount() {
     this.props.removeCurrentNoteId();
+  }
+
+  componentDidMount() {
+    this.setState({ labelFormShow: false });
+  }
+
+  toggleLabelForm(e) {
+    this.setState({ labelFormShow: !this.state.labelFormShow });
   }
 
   handleInput(field) {
@@ -30,6 +39,10 @@ class NoteFormUpdate extends React.Component {
   }
 
   render() {
+
+    const labelForm = this.state.labelFormShow ? (
+      <LabelEditFormContainer noteId={this.state.id} toggleLabelForm={this.toggleLabelForm} />
+    ) : (null);
 
     return (
       <div className="note-update">
@@ -55,7 +68,8 @@ class NoteFormUpdate extends React.Component {
         <div className="note-update-bottom-tray">
 
           <div className="note-update-actions">
-            <i className="far fa-trash-alt" onClick={this.handleDelete}></i>
+            <i className="fas fa-tag tray-item" onClick={this.toggleLabelForm}></i>
+            <i className="far fa-trash-alt tray-item" onClick={this.handleDelete}></i>
           </div>
 
           <button
@@ -64,6 +78,10 @@ class NoteFormUpdate extends React.Component {
             Close
           </button>
 
+        </div>
+
+        <div className="note-form-update-edit-labels-container">
+          { labelForm }
         </div>
 
       </div>

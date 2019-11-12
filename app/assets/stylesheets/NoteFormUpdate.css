@@ -62,3 +62,9 @@
 .note-update-button:focus {
   outline: none;
 }
+
+.note-form-update-edit-labels-container {
+  position: relative;
+  height: 1px;
+}
+

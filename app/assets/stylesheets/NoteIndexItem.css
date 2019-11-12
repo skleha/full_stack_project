@@ -35,7 +35,7 @@
   margin-top: 15px;
   height: 20px;
   color: white;
-  transition: color 1.25s;
+  transition: color 2s;
 }
 
 .note-item-tray:hover {
@@ -45,11 +45,12 @@
 }
 
 .tray-item {
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .note-item-label-edit-form-container {
   position: relative;
   height: 1px;
 }
+

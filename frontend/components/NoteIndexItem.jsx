@@ -47,7 +47,7 @@ class NoteIndexItem extends React.Component {
           <NoteLabelsIndexContainer noteId={note.id} />
         </div>
 
-        <div className={`note-item-tray`}>
+        <div className="note-item-tray">
           <i className="fas fa-tag tray-item" onClick={this.toggleLabelForm}></i>
           <i className="far fa-trash-alt tray-item"></i>
         </div>
