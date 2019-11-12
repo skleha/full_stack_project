@@ -40,12 +40,12 @@ class FormLogin extends React.Component {
         <div className="login-form">
 
           <h2 className="login-form-brand">
-            <span className="login-G">G</span>
-            <span className="login-o1">o</span>
-            <span className="login-o2">o</span>
-            <span className="login-g">g</span>
-            <span className="login-l">l</span>
-            <span className="login-e">e</span>
+            <span className="google-G">G</span>
+            <span className="google-o1">o</span>
+            <span className="google-o2">o</span>
+            <span className="google-g">g</span>
+            <span className="google-l">l</span>
+            <span className="google-e">e</span>
           </h2>
 
           <h2 className="login-form-title">Log In</h2>

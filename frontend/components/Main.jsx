@@ -4,7 +4,7 @@ import NoteFormCreateContainer from "./NoteFormCreateContainer";
 import NoteIndexContainer from './NoteIndexContainer';
 import LabelIndexContainer from './LabelIndexContainer';
 
-const Main = () => {
+const Main = props => {
 
   return (
     
@@ -16,8 +16,23 @@ const Main = () => {
           <i className="fal fa-bars fa-lg"></i>
           <i className="fal fa-lightbulb fa-lg"></i>
           <h1 className="header-product">Keeper</h1>
-        </div>   
+        </div>
       
+        <div className="header-search">
+          
+          <input
+            className="header-search-input"
+            type="text"
+            placeholder="Search"/>
+          
+          <i className="far fa-search fa-lg"></i>
+        
+        </div>
+
+        <div className="header-logout" onClick={props.logout}>
+          Logout
+        </div>
+
       </div>
 
       <div className="subheader">

@@ -14,4 +14,7 @@ class Note < ApplicationRecord
     through: :assignments,
     source: :label
 
+
+
+
 end

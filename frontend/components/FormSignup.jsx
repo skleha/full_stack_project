@@ -40,12 +40,12 @@ class FormSignup extends React.Component {
         <div className="signup-form">
 
           <h2 className="signup-form-brand">
-            <span className="signup-G">G</span>
-            <span className="signup-o1">o</span>
-            <span className="signup-o2">o</span>
-            <span className="signup-g">g</span>
-            <span className="signup-l">l</span>
-            <span className="signup-e">e</span>
+            <span className="google-G">G</span>
+            <span className="google-o1">o</span>
+            <span className="google-o2">o</span>
+            <span className="google-g">g</span>
+            <span className="google-l">l</span>
+            <span className="google-e">e</span>
           </h2>
 
           <h2 className="signup-form-title">Sign Up</h2>
@@ -81,6 +81,7 @@ class FormSignup extends React.Component {
 
               <label className="signup-input">
                 <input
+                  className="signup-form-input"
                   type="text"
                   value={this.state.email}
                   onChange={this.handleInput('email')}

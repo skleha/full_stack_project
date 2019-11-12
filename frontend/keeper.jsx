@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
 import autosize from 'autosize';
-import { fetchAssignments, fetchAssignment, createAssignment, deleteAssignment } from '../frontend/actions/assignment_actions';
+import { logout } from '../frontend/actions/session_actions';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,10 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Testing begins
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.fetchAssignments = fetchAssignments;
-  window.fetchAssignment = fetchAssignment;
-  window.createAssignment = createAssignment;
-  window.deleteAssignment = deleteAssignment;
+  window.logout = logout;
   // Testing ends
 
   const root = document.getElementById("root");
