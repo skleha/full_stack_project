@@ -37,6 +37,7 @@ class LabelEditFormItem extends React.Component {
           type="checkbox"
           checked={this.state.isLabel}
           onChange={this.handleChange}
+          onClick={e => e.stopPropagation()}
         />
         
         <h3 className="label-edit-form-item-name">{this.props.label.name}</h3>

@@ -2,7 +2,7 @@
 .note-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px 16px 12px;
   margin: 7px;
   background-color: #fff;
@@ -27,18 +27,17 @@
 }
 
 .note-item-label-tray {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 3px;
 }
 
-.note-item-tray {
+.note-item-action-tray {
   margin-top: 15px;
-  height: 20px;
   color: white;
   transition: color 2s;
 }
 
-.note-item-tray:hover {
+.note-item:hover .note-item-action-tray {
   color: black;
   transition-delay: 5s;
   transition: color 1s;
