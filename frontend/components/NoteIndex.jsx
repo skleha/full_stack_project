@@ -5,13 +5,14 @@ import NoteIndexItem from './NoteIndexItem';
 class NoteIndex extends React.Component {
 
   componentDidMount() {
-    this.props.fetchNotes();
+    // did fetch notes here, but take care of in search bar
+    // this.props.fetchNotes();
     this.props.fetchAssignments();
   }
 
   render() {
    
-    const { notes, openModal, receiveCurrentNoteId } = this.props;
+    const { notes, deleteNote, receiveCurrentNoteId, openModal } = this.props;
     
     return (
       <div className="note-index">
@@ -20,6 +21,7 @@ class NoteIndex extends React.Component {
             <NoteIndexItem 
               key={note.id}
               note={note}
+              deleteNote={deleteNote}
               receiveCurrentNoteId={receiveCurrentNoteId}
               openModal={openModal} />) }
         </ul>

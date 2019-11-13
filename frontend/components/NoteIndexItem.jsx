@@ -8,8 +8,9 @@ class NoteIndexItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = { labelFormShow: false };
-    this.handleClick = this.handleClick.bind(this);
     this.toggleLabelForm = this.toggleLabelForm.bind(this);
+    this.showNote = this.showNote.bind(this);
+    this.deleteThisNote = this.deleteThisNote.bind(this);
   }
 
   toggleLabelForm(e) {
@@ -21,9 +22,14 @@ class NoteIndexItem extends React.Component {
     return (e) => this.setState({ [field]: e.currentTarget.value })
   }
 
-  handleClick(e) {
+  showNote(e) {
     this.props.receiveCurrentNoteId(this.props.note.id);
     this.props.openModal('editNoteForm');
+  }
+
+  deleteThisNote(e) {
+    e.stopPropagation();
+    this.props.deleteNote(this.props.note.id);
   }
 
   render() {
@@ -36,7 +42,7 @@ class NoteIndexItem extends React.Component {
 
     return (
     
-      <li key={note.id} onClick={this.handleClick} className="note-item">
+      <li key={note.id} onClick={this.showNote} className="note-item">
           
         <div className="note-item-title-body">
           <h2 className="note-item-title">{note.title}</h2><br></br>
@@ -49,7 +55,7 @@ class NoteIndexItem extends React.Component {
 
         <div className="note-item-action-tray">
           <i className="fas fa-tag tray-item" onClick={this.toggleLabelForm}></i>
-          <i className="far fa-trash-alt tray-item"></i>
+          <i className="far fa-trash-alt tray-item" onClick={this.deleteThisNote}></i>
         </div>
 
         <div className="note-item-label-edit-form-container">

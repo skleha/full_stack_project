@@ -1,7 +1,7 @@
 
 import { connect } from 'react-redux';
 import NoteIndex from './NoteIndex';
-import { fetchNotes } from '../actions/note_actions';
+import { fetchNotes, deleteNote } from '../actions/note_actions';
 import { fetchAssignments } from '../actions/assignment_actions';
 import { receiveCurrentNoteId } from '../actions/session_actions';
 import { openModal } from '../actions/modal_actions';
@@ -12,6 +12,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchNotes: () => dispatch(fetchNotes()),
+  deleteNote: noteId => dispatch(deleteNote(noteId)),
   receiveCurrentNoteId: noteId => dispatch(receiveCurrentNoteId(noteId)),
   fetchAssignments: () => dispatch(fetchAssignments()),
   openModal: component => dispatch(openModal(component))

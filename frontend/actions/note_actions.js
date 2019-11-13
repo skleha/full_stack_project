@@ -46,3 +46,8 @@ export const deleteNote = noteId => dispatch => (
   NoteAPIUtil.deleteNote(noteId)
     .then( () => dispatch(removeNote(noteId)))
 );
+
+export const noteSearch = searchResult => dispatch => (
+  dispatch(receiveNotes(searchResult))
+);
+

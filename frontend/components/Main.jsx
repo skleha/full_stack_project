@@ -3,6 +3,7 @@ import React from 'react';
 import NoteFormCreateContainer from "./NoteFormCreateContainer";
 import NoteIndexContainer from './NoteIndexContainer';
 import LabelIndexContainer from './LabelIndexContainer';
+import SearchBarContainer from './SearchBarContainer';
 
 const Main = props => {
 
@@ -18,17 +19,8 @@ const Main = props => {
           <h1 className="header-product">Keeper</h1>
         </div>
       
-        <div className="header-search">
-          
-          <input
-            className="header-search-input"
-            type="text"
-            placeholder="Search"/>
-          
-          <i className="far fa-search fa-lg"></i>
+        <SearchBarContainer />
         
-        </div>
-
         <div className="header-logout" onClick={props.logout}>
           Logout
         </div>

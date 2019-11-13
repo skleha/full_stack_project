@@ -3,6 +3,8 @@ import React from 'react';
 
 const NoteLabelsIndexItem = props => {
 
+  if (!props.label.name) return null;
+
   return (
     <li className="note-label-index-item">
       
