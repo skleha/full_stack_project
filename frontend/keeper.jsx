@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
 import autosize from 'autosize';
-import { fetchNotes } from './utils/note_api_util';
+import { fetchNotes } from './actions/note_actions';
+import { updateFilter, deleteFilter } from './actions/filter_actions';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   window.fetchNotes = fetchNotes;
-  
+  window.updateFilter = updateFilter;
+  window.deleteFilter = deleteFilter;
   // Testing ends
 
   const root = document.getElementById("root");

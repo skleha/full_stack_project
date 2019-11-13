@@ -37,7 +37,7 @@ const Main = props => {
 
       <div className="subheader">
 
-          <ul className="subheader-sidebar">
+          <ul className="subheader-sidebar" onClick={props.deleteFilter}>
             <li className="subheader-sidebar-li">
               <i className="far fa-lightbulb fa-lg"></i>
               <h1 className="subheader-sidebar-all-notes">All Notes</h1>

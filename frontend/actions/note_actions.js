@@ -22,8 +22,8 @@ const removeNote = noteId => ({
   noteId
 });
 
-export const fetchNotes = () => dispatch => (
-  NoteAPIUtil.fetchNotes()
+export const fetchNotes = filter => dispatch => (
+  NoteAPIUtil.fetchNotes(filter)
     .then(notes => dispatch(receiveNotes(notes)))
 );
 

@@ -58,7 +58,7 @@ class NoteFormCreate extends React.Component {
 
         <div className="note-create-bottom-tray">
           
-          <h1 className="note-create-actions">note form buttons</h1>
+          <h1 className="note-create-actions"></h1>
           
           <button
           className="note-create-button"

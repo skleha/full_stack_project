@@ -28,7 +28,8 @@ class LabelIndex extends React.Component {
           {labels.map(label => 
             <LabelIndexItem
             key={label.id}
-            label={label}            
+            label={label}
+            updateFilter={updateFilter}         
             />)}
         </ul>
         <ul>

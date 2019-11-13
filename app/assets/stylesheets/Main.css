@@ -87,7 +87,16 @@
 .subheader-sidebar-li {
   display: flex;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
 }
+
+.subheader-sidebar-li:hover {
+  background-color: #feefc3;
+  border-radius: 0px 20px 20px 0px;
+}
+
 
 .far.fa-lightbulb {
   margin-left: 20px;
@@ -95,7 +104,7 @@
 }
 
 .subheader-sidebar-all-notes {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .subheader-note-form {
