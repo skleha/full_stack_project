@@ -1,7 +1,11 @@
 class Api::NotesController < ApplicationController
 
   def index
-    @notes = Note.where(author_id: current_user.id).includes(:labels)
+    notes = filter ?
+      Note.by_filter_and_author(filter, current_user.id) 
+    : Note.by_author(current_user.id)
+    
+    @notes = notes.includes(:labels)
     render :index
   end
 
@@ -52,25 +56,11 @@ class Api::NotesController < ApplicationController
     params.require(:note).permit(:title, :body, :author_id, :pinned, :color, :img_url, :reminder, :archived)
   end
 
+  def filter
+    params[:filter]
+  end
+
+
+
 end
 
-
-
-# Labels nested in a label object
-# @notes.each do |note|
-#   json.set! note.id do
-#     json.extract! note, :id, :title, :body, :author_id, :pinned, :color, :img_url, :reminder, :archived
-#     json.labels do
-#       note.labels.each do |label|
-#         json.extract! label, :id, :name
-#       end
-#     end
-#   end
-# end
-
-# No label information
-# @notes.each do |note|
-#   json.set! note.id do
-#     json.extract! note, :id, :title, :body, :author_id, :pinned, :color, :img_url, :reminder, :archived
-#   end
-# end

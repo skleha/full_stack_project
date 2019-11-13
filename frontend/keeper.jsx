@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/Root';
 import autosize from 'autosize';
-import { logout } from '../frontend/actions/session_actions';
+import { fetchNotes } from './utils/note_api_util';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Testing begins
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.logout = logout;
+  window.fetchNotes = fetchNotes;
+  
   // Testing ends
 
   const root = document.getElementById("root");
