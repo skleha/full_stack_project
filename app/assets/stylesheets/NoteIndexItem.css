@@ -24,6 +24,8 @@
   font-size: 14px;
   line-height: 20px;
   white-space: pre-wrap;
+  max-height: 330px;
+  overflow: hidden;
 }
 
 .note-item-label-tray {
