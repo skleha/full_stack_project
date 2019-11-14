@@ -180,6 +180,7 @@ user1_label3 = Label.create(name: "motorcycles", user_id: user1.id)
 user1_label4 = Label.create(name: "Cats", user_id: user1.id)
 user1_label5 = Label.create(name: "Literature", user_id: user1.id)
 user1_label6 = Label.create(name: "favorites", user_id: user1.id)
+user1_label7 = Label.create(name: "Planetary Travel", user_id: user1.id)
 
 user1_assignment1 = Assignment.create(note_id: user1_note4.id, label_id: user1_label1.id)
 user1_assignment2 = Assignment.create(note_id: user1_note16.id, label_id: user1_label1.id)

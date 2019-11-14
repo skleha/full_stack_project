@@ -5,7 +5,7 @@ import { logout } from '../actions/session_actions';
 import { deleteFilter} from '../actions/filter_actions';
 
 const mapStateToProps = state => ({
-  
+  sidebarToggle: state.ui.sidebarToggle  
 });
 
 const mapDispatchToProps = dispatch => ({

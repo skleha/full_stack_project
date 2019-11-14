@@ -50,4 +50,3 @@ export const deleteNote = noteId => dispatch => (
 export const noteSearch = searchResult => dispatch => (
   dispatch(receiveNotes(searchResult))
 );
-

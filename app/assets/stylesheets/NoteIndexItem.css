@@ -11,6 +11,7 @@
   width: 238px;
 }
 
+
 .note-item:hover {
   -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
   box-shadow: 2px 3px 5px 1px #5E5E5E;
@@ -26,6 +27,7 @@
   white-space: pre-wrap;
   max-height: 330px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .note-item-label-tray {

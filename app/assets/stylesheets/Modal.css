@@ -7,7 +7,16 @@
   left: 0;
   background: rgba(214, 213, 213, 0.7);
   z-index: 10;
+  animation-name: modalAppear;
+  animation-duration: .33s;
+  animation-timing-function: linear;
 }
+
+@keyframes modalAppear { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 .modal-child {
   position: absolute;

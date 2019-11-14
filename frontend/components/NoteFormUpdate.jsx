@@ -1,6 +1,7 @@
 
 import React from 'react';
 import LabelEditFormContainer from './LabelEditFormContainer';
+import autosize from 'autosize';
 
 class NoteFormUpdate extends React.Component {
 
