@@ -20,6 +20,15 @@ class Main extends React.Component {
 
   render() {
 
+    const filterDisplay = (this.props.currentFilter) ? (
+      <h1 className="header-left-title">{this.props.currentFilter}</h1>
+    ) : (
+      <div className="header-left-title-display">
+        <i className="fal fa-lightbulb fa-lg"></i>
+        <h1 className="header-left-title">Keeper</h1>
+      </div>
+    )
+
     const subheaderSidebar = (this.state.showSidebar) ? (
       <ul className="subheader-sidebar" onClick={this.props.deleteFilter}>
         <li className="subheader-sidebar-li">
@@ -43,8 +52,7 @@ class Main extends React.Component {
 
           <div className="header-left">
             <i className="fal fa-bars fa-lg" onClick={this.toggleSidebar}></i>
-            <i className="fal fa-lightbulb fa-lg"></i>
-            <h1 className="header-product">Keeper</h1>
+            {filterDisplay}
           </div>
         
           <SearchBarContainer />

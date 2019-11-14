@@ -12,9 +12,15 @@
   margin-left: 20px;
 }
 
+.header-left-title-display {
+  display: flex;
+  align-items: center;
+}
+
 .fa-bars {
   color: #676c73;
   cursor: pointer;
+  margin-right: 13px;
 }
 
 .fal.fa-lightbulb {
@@ -22,11 +28,10 @@
   background-color: #fabc02;
   padding: 10px 10px;
   border-radius: 4px;
-  margin-left: 13px;
   margin-right: 13px;
 }
 
-.header-product {
+.header-left-title {
   font-size: 22px;
   color: #676c73;
   -webkit-text-stroke-width: .5px;
@@ -43,7 +48,6 @@
   box-shadow: 3px 4px 2px -2px #919191;
   border-radius: 5px;
 }
-
 
 .subheader {
   display: flex
