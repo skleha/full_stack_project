@@ -43,10 +43,10 @@ class SearchBar extends React.Component {
   render() {
 
     return (
-      <div className="header-search">
+      <div className="search">
 
         <input
-          className="header-search-input"
+          className="search-input"
           type="text"
           placeholder="Search"
           onChange={this.filterFunc}

@@ -25,5 +25,4 @@ class Note < ApplicationRecord
   end
 
 
-
 end

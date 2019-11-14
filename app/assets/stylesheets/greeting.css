@@ -1,12 +1,11 @@
 
-.greeting-main {
-}
 
 .greeting-pitch {
   background-image: url("/greeting-post-it-note.jpg");
   /* background-image: image-url('/greeting-post-it-note.jpg'); */
   background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 825px;
   position: relative;
 }
@@ -14,7 +13,7 @@
 .greeting-brand-product {
   position: absolute;
   top: 50px;
-  left: 100px;
+  left: 80px;
 }
 
 .greeting-brand {
@@ -30,21 +29,24 @@
   -webkit-text-stroke-color: lightgray;
 }
 
+.greeting-tagline-btn-container {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  text-align: center;
+}
+
 .greeting-tagline {
   font-size: 50px;
   color: white;
-  position: absolute;
-  top: 450px;
-  left: 770px;
+  margin-bottom: 15px;
 }
 
 .greeting-button-container {
-  position: absolute;
-  top: 580px;
-  left: 830px;
+  display: flex;
 }
 
-.greeting-btn {
+.greeting-link {
   font-family: 'Open Sans', sans-serif;
   background-color:#0080ff;
   font-size: 20px;
@@ -56,4 +58,23 @@
   margin: 10px;
   border-radius: 8px;
   text-decoration: none;
+  width: 80px;
+  text-align: center;
+}
+
+.greeting-btn {
+  font-family: 'Open Sans', sans-serif;
+  background-color:#0080ff;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 130px;
+}
+
+.greeting-btn:focus {
+  outline: 0;
 }
