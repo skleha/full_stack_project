@@ -16,8 +16,11 @@ Keeper is a cloud-based, easy-to-use, lightweight note-taking app that allows a 
   * Each displayed note has a title, a body, its labels and action icons that allow the user to add a label or delete the note.
   * Users can search on a text string; notes are immediately filtered, showing the search result.
   
-#### Screenshots<br></br>
-<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+10.31.09+AM.png" />
+#### Select Screenshots
+The note tile contains a title, body, any labels assigned to the note, and two action icons.  The two action icons include a tag, which will allow for label assignment and/or creation, and a trashcan, which will delete the note.<br></br>
+<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+10.31.09+AM.png" /><br></br>
+The "virtual wall" of notes.<br></br>
+<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+11.25.36+AM.png" />
 
 
 #### Technologies<br></br>
