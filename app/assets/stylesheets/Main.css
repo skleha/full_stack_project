@@ -2,8 +2,12 @@
 .header {
   height: 75px;
   border-bottom: 1px solid lightgray;
+  background-color: white;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .header-left {
@@ -50,7 +54,8 @@
 }
 
 .subheader {
-  display: flex
+  display: flex;
+  padding-top: 75px;
 }
 
 .subheader-sidebar {
