@@ -1,7 +1,51 @@
 
 .note-index-ul {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+
+  width: 1600px;
+  margin: 1px auto;
+  columns: 6;
+  column-gap: 35px;
 }
 
+.note-index-ul .note-item {
+  /* width: 100%; */
+  margin: 0 0 10px;
+  padding: 10px;
+  /* overflow: hidden; */
+  /* max-width: 100%; */
+  break-inside: avoid;
+}
+
+@media (max-width: 1900px)  {
+  .note-index-ul {
+    columns: 5;
+    width: 1325px;
+    /* box-sizing: border-box; */
+    /* padding: 20px 20px 20px 0; */
+  }
+}
+
+
+@media (max-width: 1600px)  {
+  .note-index-ul {
+    columns: 4;
+    width: 1050px;
+  }
+}
+
+@media (max-width: 1320px)  {
+  .note-index-ul {
+    columns: 3;
+    width: 775px;
+  }
+}
+
+@media (max-width: 1025px)  {
+  .note-index-ul {
+    columns: 2;
+    width: 500px;
+  }
+}

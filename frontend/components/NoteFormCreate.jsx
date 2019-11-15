@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import autosize from 'autosize'
 
 class NoteFormCreate extends React.Component {
 
@@ -22,10 +22,17 @@ class NoteFormCreate extends React.Component {
       this.props.createNote(this.state);
       this.setState(this.props.note);
     }
+
+    const textArea = document.querySelector('.note-create-body');
+    const evt = document.createEvent('Event');
+    evt.initEvent('autosize:destroy', true, false);
+    textArea.dispatchEvent(evt);
   }
 
   togglePanel(e) {
     this.setState({ open: !this.state.open })
+    const textArea = document.querySelector('.note-create-body');
+    autosize(textArea);
   }
 
   render() {

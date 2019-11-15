@@ -36,7 +36,7 @@ class Main extends React.Component {
           <h1 className="subheader-sidebar-all-notes">All Notes</h1>
         </li>
       </ul>
-    ) : ( null )
+      )  : ( null )
 
     const mainSidebar = (this.state.showSidebar) ? (
       <div className="main-sidebar">

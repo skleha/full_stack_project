@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   // using autosize library to make text area in note forms auto-resizing
-  const textArea1 = document.querySelector('.note-create-body');
-  const textArea2 = document.querySelector('.note-update-body');
-  autosize(textArea1);
-  autosize(textArea2);
+  // const textArea = document.querySelector('.note-create-body');
+  // autosize(textArea);
 });
