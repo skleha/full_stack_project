@@ -20,10 +20,39 @@ Keeper is a cloud-based, easy-to-use, lightweight note-taking app that allows a 
 The note tile contains a title, body, any labels assigned to the note, and two action icons.  The two action icons include a tag, which will allow for label assignment and/or creation, and a trashcan, which will delete the note.<br></br>
 <img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+10.31.09+AM.png" /><br></br>
 The "virtual wall" of notes.<br></br>
-<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+11.25.36+AM.png" />
+<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+11.25.36+AM.png" /><br></br>
+Searching for notes that contain the "camping" text string (case-insensitive search):<br></br>
+<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+11.28.58+AM.png" /><br></br>
 
+#### Select Code Snippets
+The following is the quick snippet showing the code to 'show' a note.  This code stores the note id in a slice of state and opens a modal.
+```
+showNote(e) {
+    this.props.receiveCurrentNoteId(this.props.note.id);
+    this.props.openModal('editNoteForm');
+  }
+```
+The modal, and its contents, are displayed in a keyframes animation:
+```
+@keyframes modalAppear { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+```
+The user clicks on a button with text of "close" to close and save the note.
+```
+    <button
+        className="note-update-button"
+         onClick={this.handleSubmit}>
+         Close
+    </button>
+```
 
 #### Technologies<br></br>
+  * PostGreSQL
+  * Ruby on Rails
+  * React-Redux
+
 #### Future Implementations<br></br>
 
 
