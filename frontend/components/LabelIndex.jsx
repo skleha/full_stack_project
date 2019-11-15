@@ -29,7 +29,7 @@ class LabelIndex extends React.Component {
             <LabelIndexItem
             key={label.id}
             label={label}
-            updateFilter={updateFilter}         
+            updateFilter={this.props.updateFilter}
             />)}
         </ul>
         <ul>
