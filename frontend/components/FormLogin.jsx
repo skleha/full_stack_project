@@ -40,7 +40,7 @@ class FormLogin extends React.Component {
         <div className="login-form">
 
           <h2 className="login-form-brand">
-            <span className="google-G">G</span>
+            <span className="google-G">K</span>
             <span className="google-o1">o</span>
             <span className="google-o2">o</span>
             <span className="google-g">g</span>
@@ -72,7 +72,7 @@ class FormLogin extends React.Component {
               <label className="login-form-password">
                 <input
                   className="login-form-input"
-                  type="text"
+                  type="password"
                   value={this.state.password}
                   onChange={this.handleInput('password')}
                   placeholder="Password"
