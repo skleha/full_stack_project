@@ -27,11 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Testing begins
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
-  window.fetchNotes = fetchNotes;
-  window.updateFilter = updateFilter;
-  window.deleteFilter = deleteFilter;
+  // window.getState = store.getState;
+  // window.dispatch = store.dispatch;
   // Testing ends
 
   const root = document.getElementById("root");
