@@ -7,7 +7,7 @@
 Keeper is a cloud-based, easy-to-use, lightweight note-taking app that allows a user to capture the thoughts, ideas and details of life.  The format is similar to that of Post-it notes.  Notes are displayed on square note tiles, and displayed, along with all other notes, on virtual wall of thoughts, ideas and details.  Users can organize these thoughts using labels, and label links allow for the display of notes with the same label.  Alternatively, a note take can search all notes using a search string.  The note wall is immediately filtered to show the search results. 
 <br></br>
 
-#### Key Features<br></br>
+#### Key Features
   * Secure frontend to backend user authentication using BCrypt.
   * Users can create, read, update, and delete notes.
   * Users can create, read, update, and delete labels.
@@ -17,6 +17,9 @@ Keeper is a cloud-based, easy-to-use, lightweight note-taking app that allows a 
   * Users can search on a text string; notes are immediately filtered, showing the search result.
   
 #### Screenshots<br></br>
+<img src="https://sk-github-screenshots.s3-us-west-1.amazonaws.com/Screen+Shot+2019-11-15+at+10.31.09+AM.png" />
+
+
 #### Technologies<br></br>
 #### Future Implementations<br></br>
 
