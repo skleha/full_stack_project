@@ -1,7 +1,10 @@
 # Keeper
 
-Link to live 
-Features
+Link to live website
+Description
+Key Features
 Screenshots
+Technologies
 Future Implementations
+
 
