@@ -13,7 +13,7 @@ class NoteIndex extends React.Component {
   render() {
    
     const { notes, deleteNote, receiveCurrentNoteId, openModal } = this.props;
-    
+
     return (
       <div className="note-index">
         <ul className="note-index-ul">
