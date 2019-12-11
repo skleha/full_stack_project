@@ -17,13 +17,13 @@ class NoteIndex extends React.Component {
     const unpinned = notes.filter(ele => !ele.pinned );
     
     const pinnedSubtitle = pinned.length ? (
-      <div className="note-index-subtitle">pinned</div>
+      <div className="note-index-subtitle-top">pinned</div>
     ) : (
       null
     );
 
     const unpinnedSubtitle = pinned.length ? (
-      <div className="note-index-subtitle">others</div>
+      <div className="note-index-subtitle-bottom">others</div>
     ) : (
       null
     );
