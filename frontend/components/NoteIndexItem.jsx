@@ -36,6 +36,12 @@ class NoteIndexItem extends React.Component {
   
     const { note } = this.props;
 
+    const pinType = note.pinned ? (
+      <i className="fas fa-thumbtack"></i>
+      ) : (
+      <i className="fal fa-thumbtack"></i>
+    );
+
     const labelForm = this.state.labelFormShow ? (  
       <LabelEditFormContainer noteId={note.id} toggleLabelForm={this.toggleLabelForm}/>
     ) : ( null );
@@ -44,7 +50,7 @@ class NoteIndexItem extends React.Component {
       <li key={note.id} onClick={this.showNote} className="note-item">
         <div className="note-item-title-pin">
           <h2 className="note-item-title">{note.title}</h2>
-          <i className="fal fa-thumbtack"></i>
+          { pinType }
         </div>
 
         <h3 className="note-item-body">{note.body}</h3>
