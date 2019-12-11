@@ -28,6 +28,15 @@
   break-inside: avoid;
 }
 
+.note-index-subtitle {
+  font-variant: small-caps;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: #5F6368;
+}
+
+
 @media (max-width: 1900px)  {
   .pinned-note-index-ul {
     columns: 5;
