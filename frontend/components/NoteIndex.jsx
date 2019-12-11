@@ -12,21 +12,57 @@ class NoteIndex extends React.Component {
 
   render() {
    
-    const { notes, deleteNote, receiveCurrentNoteId, openModal } = this.props;
+    const { notes, deleteNote, receiveCurrentNoteId, updateNote, openModal } = this.props;
+    const pinned = notes.filter(ele => ele.pinned );
+    const unpinned = notes.filter(ele => !ele.pinned );
+    
+    const pinnedSubtitle = pinned.length ? (
+      <div className="note-index-subtitle-top">pinned</div>
+    ) : (
+      null
+    );
+
+    const unpinnedSubtitle = pinned.length ? (
+      <div className="note-index-subtitle-bottom">others</div>
+    ) : (
+      null
+    );
 
     return (
       <div className="note-index">
-        <ul className="note-index-ul">
-          {notes.map(note => 
-            <NoteIndexItem 
+       
+        {pinnedSubtitle}
+       
+        <ul className="pinned-note-index-ul">
+          {pinned.map(note => (
+            <NoteIndexItem
               key={note.id}
               note={note}
               deleteNote={deleteNote}
               receiveCurrentNoteId={receiveCurrentNoteId}
-              openModal={openModal} />) }
+              updateNote={updateNote}
+              openModal={openModal}
+            />
+          ))}
         </ul>
+        
+        {unpinnedSubtitle}
+        
+        <ul className="unpinned-note-index-ul">
+          {unpinned.map(note => (
+            <NoteIndexItem
+              key={note.id}
+              note={note}
+              deleteNote={deleteNote}
+              receiveCurrentNoteId={receiveCurrentNoteId}
+              updateNote={updateNote}
+              openModal={openModal}
+            />
+          ))}
+        </ul>
+
       </div>
-    )
+    );
   }
 }
 
