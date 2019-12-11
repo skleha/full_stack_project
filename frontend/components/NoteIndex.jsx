@@ -13,11 +13,14 @@ class NoteIndex extends React.Component {
   render() {
    
     const { notes, deleteNote, receiveCurrentNoteId, openModal } = this.props;
+    const pinned = notes.filter(ele => ele.pinned );
+    const unpinned = notes.filter(ele => !ele.pinned );
+    console.log(pinned);
 
     return (
       <div className="note-index">
         <ul className="note-index-ul">
-          {notes.map(note => 
+          {unpinned.map(note => 
             <NoteIndexItem 
               key={note.id}
               note={note}
