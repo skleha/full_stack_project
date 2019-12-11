@@ -45,7 +45,7 @@ class NoteIndexItem extends React.Component {
       <li key={note.id} onClick={this.showNote} className="note-item">
           
         <div className="note-item-title-body">
-          <h2 className="note-item-title">{note.title}</h2><br></br>
+          <h2 className="note-item-title">{note.title}</h2>
           <h3 className="note-item-body">{note.body}</h3>
         </div>
 
