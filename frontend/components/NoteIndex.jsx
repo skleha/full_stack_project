@@ -19,7 +19,7 @@ class NoteIndex extends React.Component {
     return (
       <div className="note-index">
         
-        <ul className="note-index-ul">
+        <ul className="pinned-note-index-ul">
           {pinned.map(note => (
             <NoteIndexItem
               key={note.id}
@@ -31,7 +31,7 @@ class NoteIndex extends React.Component {
           ))}
         </ul>
 
-        <ul className="note-index-ul">
+        <ul className="unpinned-note-index-ul">
           {unpinned.map(note => (
             <NoteIndexItem
               key={note.id}
@@ -42,7 +42,7 @@ class NoteIndex extends React.Component {
             />
           ))}
         </ul>
-        
+
       </div>
     );
   }
