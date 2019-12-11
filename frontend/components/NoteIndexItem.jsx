@@ -7,10 +7,14 @@ class NoteIndexItem extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { labelFormShow: false };
+    this.state = this.props.note;
     this.toggleLabelForm = this.toggleLabelForm.bind(this);
     this.showNote = this.showNote.bind(this);
     this.deleteThisNote = this.deleteThisNote.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ labelFormShow: false });
   }
 
   toggleLabelForm(e) {
@@ -20,6 +24,12 @@ class NoteIndexItem extends React.Component {
 
   handleInput(field) {
     return (e) => this.setState({ [field]: e.currentTarget.value })
+  }
+
+  togglePinned(e) {
+    e.stopPropagation();
+    this.setState({ labelFormShow: !this.state.pinned });
+    this.props.updateNote(this.state);
   }
 
   showNote(e) {
