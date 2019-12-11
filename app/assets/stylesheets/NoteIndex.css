@@ -1,5 +1,4 @@
 
-
 .pinned-note-index-ul {
   width: 1600px;
   margin: 1px auto;
@@ -42,7 +41,6 @@
   margin-bottom: 10px;
   color: #5F6368;
 }
-
 
 @media (max-width: 1900px)  {
   .pinned-note-index-ul {
