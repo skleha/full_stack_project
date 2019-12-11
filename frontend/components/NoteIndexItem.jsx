@@ -29,8 +29,8 @@ class NoteIndexItem extends React.Component {
 
   togglePinned(e) {
     e.stopPropagation();
-    this.setState({ labelFormShow: !this.state.pinned });
-    this.props.updateNote(this.state);
+    this.setState({ pinned: !this.state.pinned },
+      () => {this.props.updateNote(this.state)});
   }
 
   showNote(e) {
@@ -48,9 +48,9 @@ class NoteIndexItem extends React.Component {
     const { note } = this.props;
 
     const pinType = note.pinned ? (
-      <i className="fas fa-thumbtack"></i>
-      ) : (
-      <i className="fal fa-thumbtack"></i>
+      <i className="fas fa-thumbtack" onClick={this.togglePinned}></i>
+    ) : (
+      <i className="fal fa-thumbtack" onClick={this.togglePinned}></i>
     );
 
     const labelForm = this.state.labelFormShow ? (  

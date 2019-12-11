@@ -12,7 +12,7 @@ class NoteIndex extends React.Component {
 
   render() {
    
-    const { notes, deleteNote, receiveCurrentNoteId, openModal } = this.props;
+    const { notes, deleteNote, receiveCurrentNoteId, updateNote, openModal } = this.props;
     const pinned = notes.filter(ele => ele.pinned );
     const unpinned = notes.filter(ele => !ele.pinned );
     
@@ -40,6 +40,7 @@ class NoteIndex extends React.Component {
               note={note}
               deleteNote={deleteNote}
               receiveCurrentNoteId={receiveCurrentNoteId}
+              updateNote={updateNote}
               openModal={openModal}
             />
           ))}
@@ -54,6 +55,7 @@ class NoteIndex extends React.Component {
               note={note}
               deleteNote={deleteNote}
               receiveCurrentNoteId={receiveCurrentNoteId}
+              updateNote={updateNote}
               openModal={openModal}
             />
           ))}
