@@ -9,6 +9,7 @@ class NoteIndexItem extends React.Component {
     super(props);
     this.state = this.props.note;
     this.toggleLabelForm = this.toggleLabelForm.bind(this);
+    this.togglePinned = this.togglePinned.bind(this);
     this.showNote = this.showNote.bind(this);
     this.deleteThisNote = this.deleteThisNote.bind(this);
   }
