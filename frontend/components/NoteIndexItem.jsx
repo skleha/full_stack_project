@@ -41,28 +41,32 @@ class NoteIndexItem extends React.Component {
     ) : ( null );
 
     return (
-    
       <li key={note.id} onClick={this.showNote} className="note-item">
-          
-        <div className="note-item-title-body">
+        <div className="note-item-title-pin">
           <h2 className="note-item-title">{note.title}</h2>
-          <h3 className="note-item-body">{note.body}</h3>
+          <i className="fal fa-thumbtack"></i>
         </div>
+
+        <h3 className="note-item-body">{note.body}</h3>
 
         <div className="note-item-label-tray">
           <NoteLabelsIndexContainer noteId={note.id} />
         </div>
 
         <div className="note-item-action-tray">
-          <i className="fas fa-tag tray-item" onClick={this.toggleLabelForm}></i>
-          <i className="far fa-trash-alt tray-item" onClick={this.deleteThisNote}></i>
+          <i
+            className="fas fa-tag tray-item"
+            onClick={this.toggleLabelForm}
+          ></i>
+          <i
+            className="far fa-trash-alt tray-item"
+            onClick={this.deleteThisNote}
+          ></i>
         </div>
 
-        <div className="note-item-label-edit-form-container">
-          { labelForm }
-        </div>
+        <div className="note-item-label-edit-form-container">{labelForm}</div>
       </li>
-    )
+    );
   }
 
 }
