@@ -67,11 +67,15 @@
   font-size: 17px;
   font-weight: 500;
   color: #202124;
+  position: static;
+  left: 0px;
+  transition: left .7s, position .7s;
 }
 
 .subheader-sidebar.hidden {
   position: fixed;
   left: -500px;
+  transition: left .7s, position .7s;
 }
 
 .subheader-sidebar-li {
@@ -109,12 +113,16 @@
 }
 
 .main-sidebar {
+  position: static;
   width: 280px;
+  left: 0px;
+  transition: left .7s, position .7s;
 }
 
 .main-sidebar.hidden {
   position: fixed;
   left: -500px;
+  transition: left .7s, position .7s;
 }
 
 .main-note-index {
