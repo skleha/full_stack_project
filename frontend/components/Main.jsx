@@ -10,12 +10,13 @@ class Main extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = { showSidebar: true }
+    this.state = { showSidebar: "show" }
     this.toggleSidebar = this.toggleSidebar.bind(this);
   }
 
   toggleSidebar(e) {
-    this.setState({ showSidebar: !this.state.showSidebar })
+    const css = (this.state.showSidebar === "show") ? "hidden" : "show";
+    this.setState({ showSidebar: css })
   }
 
   render() {
@@ -30,7 +31,7 @@ class Main extends React.Component {
     )
 
     const subheaderSidebar = (this.state.showSidebar) ? (
-      <ul className="subheader-sidebar" onClick={this.props.deleteFilter}>
+      <ul className={"subheader-sidebar "+ this.state.showSidebar} onClick={this.props.deleteFilter}>
         <li className="subheader-sidebar-li">
           <i className="far fa-lightbulb fa-lg"></i>
           <h1 className="subheader-sidebar-all-notes">All Notes</h1>
@@ -38,11 +39,11 @@ class Main extends React.Component {
       </ul>
       )  : ( null )
 
-    const mainSidebar = (this.state.showSidebar) ? (
-      <div className="main-sidebar">
+    const mainSidebar = this.state.showSidebar ? (
+      <div className={"main-sidebar " + this.state.showSidebar}>
         <LabelIndexContainer />
       </div>
-    ) : ( null )
+    ) : null;
 
     return (
       
@@ -51,7 +52,7 @@ class Main extends React.Component {
         <div className="header">
 
           <div className="header-left">
-            <i className="fal fa-bars fa-lg" onClick={this.toggleSidebar}></i>
+            <i id="toggleSidebar" className="fal fa-bars fa-lg" onClick={this.toggleSidebar}></i>
             {filterDisplay}
           </div>
         

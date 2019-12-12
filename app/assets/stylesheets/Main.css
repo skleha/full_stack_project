@@ -67,15 +67,16 @@
   font-size: 17px;
   font-weight: 500;
   color: #202124;
-  /* animation-name: sidebarAppear;
-  animation-duration: .5s;
-  animation-timing-function: linear; */
+  position: static;
+  left: 0px;
+  transition: left .7s, position .7s;
 }
 
-.subheader-sidebar.hideIt {
-  visibility: hidden;
+.subheader-sidebar.hidden {
+  position: fixed;
+  left: -500px;
+  transition: left .7s, position .7s;
 }
-
 
 .subheader-sidebar-li {
   display: flex;
@@ -89,7 +90,6 @@
   background-color: #feefc3;
   border-radius: 0px 20px 20px 0px;
 }
-
 
 .far.fa-lightbulb {
   margin-left: 20px;
@@ -113,26 +113,16 @@
 }
 
 .main-sidebar {
+  position: static;
   width: 280px;
-  /* animation-name: sidebarAppear;
-  animation-duration: .5s;
-  animation-timing-function: linear; */
+  left: 0px;
+  transition: left .7s, position .7s;
 }
 
-@keyframes sidebarAppear {
-  from {
-    transform: translate3d(-150%, 0%, 0);
-    visibility: visibility;
-  }
-
-  to {
-    transform: translate3d(0%, 0%, 0);
-  }
-}
-
-
-.main-sidebar.hideIt {
-  visibility: hidden;
+.main-sidebar.hidden {
+  position: fixed;
+  left: -500px;
+  transition: left .7s, position .7s;
 }
 
 .main-note-index {
