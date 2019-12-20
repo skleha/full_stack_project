@@ -8,6 +8,7 @@
   display: flex;
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .label-index-item:hover {
