@@ -30,7 +30,7 @@ class NoteFormCreate extends React.Component {
   }
 
   togglePanel(e) {
-    this.setState({ open: !this.state.open })
+    this.setState({ open: true })
     const textArea = document.querySelector('.note-create-body');
     autosize(textArea);
   }
