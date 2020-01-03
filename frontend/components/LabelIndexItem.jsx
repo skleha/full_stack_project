@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { updateLabel } from '../utils/label_api_util';
 
 class LabelIndexItem extends React.Component {
 
@@ -10,7 +9,7 @@ class LabelIndexItem extends React.Component {
   }
 
   handleClick() {
-    this.props.updateFilter(this.props.label.name)(dispatch, getState);
+    this.props.updateFilter(this.props.label.name);
   }
 
   render() {
