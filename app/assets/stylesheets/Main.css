@@ -69,12 +69,12 @@
   font-weight: 500;
   color: #202124;
   left: 0px;
-  transition: left .7s;
+  transition: left .4s;
 }
 
 .subheader-sidebar.hidden {
   left: -500px;
-  transition: left .7s;
+  transition: left .4s;
 }
 
 .subheader-sidebar-li {
@@ -115,13 +115,13 @@
   position: fixed;
   width: 280px;
   left: 0px;
-  transition: left .7s;
+  transition: left .4s;
 }
 
 .main-sidebar.hidden {
   position: fixed;
   left: -500px;
-  transition: left .7s;
+  transition: left .4s;
 }
 
 .main-note-index {
@@ -131,10 +131,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: left .6s;
+  transition: left .4s;
 }
 
 .main-note-index.hidden {
   left: 0px;
-  transition: left .6s;
+  transition: left .4s;
 }
