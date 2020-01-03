@@ -12,6 +12,7 @@
 .note-item:hover {
   -webkit-box-shadow: 2px 3px 5px 1px #5E5E5E; 
   box-shadow: 2px 3px 5px 1px #5E5E5E;
+  cursor: pointer;
 }
 
 .note-item-title-pin {
