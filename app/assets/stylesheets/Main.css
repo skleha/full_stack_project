@@ -59,6 +59,7 @@
 }
 
 .subheader-sidebar {
+  position: fixed;
   width: 280px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -67,15 +68,13 @@
   font-size: 17px;
   font-weight: 500;
   color: #202124;
-  position: static;
   left: 0px;
-  transition: left .7s, position .7s;
+  transition: left .4s;
 }
 
 .subheader-sidebar.hidden {
-  position: fixed;
   left: -500px;
-  transition: left .7s, position .7s;
+  transition: left .4s;
 }
 
 .subheader-sidebar-li {
@@ -101,33 +100,50 @@
 }
 
 .subheader-note-form {
+  position: relative;
+  left: 150px;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  transition: left .4s;
 }
+
+.subheader-note-form.hidden {
+  left: 0px;
+  transition: left .4s;
+}
+
 
 .main {
   display: flex;
 }
 
 .main-sidebar {
-  position: static;
+  position: fixed;
   width: 280px;
   left: 0px;
-  transition: left .7s, position .7s;
+  transition: left .4s;
 }
 
 .main-sidebar.hidden {
   position: fixed;
   left: -500px;
-  transition: left .7s, position .7s;
+  transition: left .4s;
 }
 
 .main-note-index {
+  position: relative;
+  left: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: left .4s;
+}
+
+.main-note-index.hidden {
+  left: 0px;
+  transition: left .4s;
 }
