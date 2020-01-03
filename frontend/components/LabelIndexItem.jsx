@@ -10,7 +10,7 @@ class LabelIndexItem extends React.Component {
   }
 
   handleClick() {
-    this.props.updateFilter(this.props.label.name)(dispatch, getState);
+    this.props.updateFilter(this.props.label.name);
   }
 
   render() {
