@@ -30,15 +30,6 @@ class Main extends React.Component {
       </div>
     )
 
-    const subheaderSidebar = (this.state.showSidebar) ? (
-      <ul className={"subheader-sidebar "+ this.state.showSidebar} onClick={this.props.deleteFilter}>
-        <li className="subheader-sidebar-li">
-          <i className="far fa-lightbulb fa-lg"></i>
-          <h1 className="subheader-sidebar-all-notes">All Notes</h1>
-        </li>
-      </ul>
-      )  : ( null )
-
     const mainSidebar = this.state.showSidebar ? (
       <div className={"main-sidebar " + this.state.showSidebar}>
         <LabelIndexContainer />
@@ -66,7 +57,12 @@ class Main extends React.Component {
 
         <div className="subheader">
           
-          { subheaderSidebar }
+          <ul className={"subheader-sidebar " + this.state.showSidebar} onClick={this.props.deleteFilter}>
+            <li className="subheader-sidebar-li">
+              <i className="far fa-lightbulb fa-lg"></i>
+              <h1 className="subheader-sidebar-all-notes">All Notes</h1>
+            </li>
+          </ul>
 
           <div className="subheader-note-form">
             <NoteFormCreateContainer />
