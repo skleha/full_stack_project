@@ -30,12 +30,6 @@ class Main extends React.Component {
       </div>
     )
 
-    const mainSidebar = this.state.showSidebar ? (
-      <div className={"main-sidebar " + this.state.showSidebar}>
-        <LabelIndexContainer />
-      </div>
-    ) : null;
-
     return (
       
       <div>
@@ -72,7 +66,9 @@ class Main extends React.Component {
 
         <div className="main">
           
-          { mainSidebar }
+          <div className={"main-sidebar " + this.state.showSidebar}>
+            <LabelIndexContainer />
+          </div>
             
           <div className="main-note-index">
             <NoteIndexContainer />
