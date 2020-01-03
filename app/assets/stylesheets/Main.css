@@ -100,12 +100,21 @@
 }
 
 .subheader-note-form {
+  position: relative;
+  left: 150px;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  transition: left .4s;
 }
+
+.subheader-note-form.hidden {
+  left: 0px;
+  transition: left .4s;
+}
+
 
 .main {
   display: flex;

@@ -58,7 +58,7 @@ class Main extends React.Component {
             </li>
           </ul>
 
-          <div className="subheader-note-form">
+          <div className={"subheader-note-form " + this.state.showSidebar}>
             <NoteFormCreateContainer />
           </div>
 
