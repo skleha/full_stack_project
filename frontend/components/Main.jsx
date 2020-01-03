@@ -70,7 +70,7 @@ class Main extends React.Component {
             <LabelIndexContainer />
           </div>
             
-          <div className="main-note-index">
+          <div className={"main-note-index " + this.state.showSidebar}>
             <NoteIndexContainer />
           </div>
 
