@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { updateLabel } from '../utils/label_api_util';
 
 class LabelIndexItem extends React.Component {
 
