@@ -10,6 +10,7 @@
   animation-name: noteAppear;
   animation-duration: .33s;
   animation-timing-function: linear;
+  cursor: pointer;
 }
 
 @keyframes noteAppear { 
