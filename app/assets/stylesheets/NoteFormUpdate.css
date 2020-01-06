@@ -73,6 +73,7 @@
   font-size: 14px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .note-update-button:focus {
